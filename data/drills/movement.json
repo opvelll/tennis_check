@@ -1,0 +1,135 @@
+[
+  {
+    "id": "move-01",
+    "name": "視覚合図スプリット",
+    "category": ["フットワーク・身体操作", "反応", "スプリットステップ"],
+    "summary": "相手またはコーチのインパクト合図に合わせてスプリットし、示された方向へ初動する。",
+    "disciplines": ["both"], "formats": ["リアクション"], "playerCount": {"min": 2},
+    "environments": ["court", "gym"], "equipment": ["racket", "cones"], "intensity": "medium", "durationMinutes": {"min": 5, "max": 10},
+    "tags": ["スプリットステップ", "視覚反応", "第一歩"],
+    "cues": ["着地を合図より早く固定しない", "着地直後に重心を方向へ移す", "上体を立てたまま低く構える"],
+    "media": ["usta-return-techniques", "usta-quickness"], "sources": ["usta-return-techniques", "usta-quickness"], "status": "derived"
+  },
+  {
+    "id": "move-02",
+    "name": "ボールドロップ・2バウンド前キャッチ",
+    "category": ["フットワーク・身体操作", "反応", "第一歩"],
+    "summary": "コーチが落としたボールを2バウンドする前に捕り、反応と発進を磨く。",
+    "disciplines": ["both"], "formats": ["リアクション"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court", "gym"], "equipment": ["balls"], "intensity": "medium", "durationMinutes": {"min": 5, "max": 10},
+    "tags": ["反応", "第一歩", "加速"],
+    "cues": ["前足部で構える", "幹を起こして発進する", "捕球前に歩数を増やして減速する"],
+    "media": ["itf-fitness"], "sources": ["itf-fitness"], "status": "researched"
+  },
+  {
+    "id": "move-03",
+    "name": "5点ファンドリル",
+    "category": ["フットワーク・身体操作", "方向転換", "ファンドリル"],
+    "summary": "ベースライン中央から扇状に置いた5球を回収し、毎回中央へ戻す。",
+    "disciplines": ["both"], "formats": ["フットワーク"], "playerCount": {"min": 1, "max": 2},
+    "environments": ["court"], "equipment": ["balls", "racket"], "intensity": "high", "durationMinutes": {"min": 5, "max": 10},
+    "tags": ["方向転換", "減速", "外脚", "加速"],
+    "cues": ["拾う前に歩数を増やす", "外脚で安定して切り返す", "腕振りを進行方向へ使う"],
+    "media": ["itf-fitness"], "sources": ["itf-fitness"], "status": "researched"
+  },
+  {
+    "id": "move-04",
+    "name": "スパイダードリル・コート5点",
+    "category": ["フットワーク・身体操作", "方向転換", "スパイダー"],
+    "summary": "中央基点から前後左右の5点へ移動し、ラケットでラインをタッチする。",
+    "disciplines": ["both"], "formats": ["フットワーク", "テスト"], "playerCount": {"min": 1, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "cones", "timer"], "intensity": "high", "durationMinutes": {"min": 5, "max": 10},
+    "tags": ["方向転換", "敏捷性", "テスト"],
+    "cues": ["各点の手前で減速する", "腰だけを折らず脚で低くなる", "左右の回り方を統一して計測する"],
+    "media": ["usta-fitness-tests"], "sources": ["usta-fitness-tests"], "status": "researched"
+  },
+  {
+    "id": "move-05",
+    "name": "レディ・ラリー・リカバー",
+    "category": ["フットワーク・身体操作", "回復", "ホームベース"],
+    "summary": "打球ごとに球の角度に応じたホームベースへ戻り、次球を準備する。",
+    "disciplines": ["singles"], "formats": ["球出し", "ラリー"], "playerCount": {"min": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "marker"], "intensity": "medium", "durationMinutes": {"min": 8, "max": 15},
+    "tags": ["リカバリー", "ポジショニング", "予測"],
+    "cues": ["打ってから球を眺めない", "相手が打つ前に構え直す", "常にセンターマークへ戻るとは限らない"],
+    "media": ["usta-court-position"], "sources": ["usta-court-position"], "status": "researched"
+  },
+  {
+    "id": "move-06",
+    "name": "シャッフル／クロスオーバー選択",
+    "category": ["フットワーク・身体操作", "移動", "使い分け"],
+    "summary": "移動距離を合図で変え、近距離はシャッフル、遠距離はクロスオーバーで到達する。",
+    "disciplines": ["both"], "formats": ["フットワーク", "リアクション"], "playerCount": {"min": 2},
+    "environments": ["court", "gym"], "equipment": ["cones"], "intensity": "medium", "durationMinutes": {"min": 6, "max": 12},
+    "tags": ["シャッフル", "クロスオーバー", "距離判断"],
+    "cues": ["最短で届く足運びを選ぶ", "足を交差したまま打点へ入らない", "最後は調整歩へ切り替える"],
+    "media": ["usta-quickness"], "sources": ["usta-quickness"], "status": "derived"
+  },
+  {
+    "id": "move-07",
+    "name": "ワイドボール・外脚ブレーキ",
+    "category": ["フットワーク・身体操作", "減速", "外脚"],
+    "summary": "ワイドへの移動から外脚で姿勢を保って減速し、反対方向へ再加速する。",
+    "disciplines": ["both"], "formats": ["フットワーク", "球出し"], "playerCount": {"min": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "cones"], "intensity": "high", "durationMinutes": {"min": 6, "max": 12},
+    "tags": ["減速", "外脚", "切り返し", "リカバリー"],
+    "cues": ["膝とつま先の向きを揃える", "接地で上体が流れない", "止まる動作を戻る動作へつなげる"],
+    "media": ["usta-quickness", "itf-fitness"], "sources": ["usta-quickness", "itf-fitness"], "status": "derived"
+  },
+  {
+    "id": "move-08",
+    "name": "2フィーダー・斜めカットオフ",
+    "category": ["フットワーク・身体操作", "反応", "斜め移動"],
+    "summary": "左右のフィーダーの声とドロップに反応し、斜め前へ入って打球する。",
+    "disciplines": ["both"], "formats": ["球出し", "リアクション"], "playerCount": {"min": 3},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 6, "max": 12},
+    "tags": ["斜め移動", "反応", "カットオフ"],
+    "cues": ["合図前に予測で動かない", "スプリット時のバランスを保つ", "ボールへ直線的に入る"],
+    "media": ["usta-quickness"], "sources": ["usta-quickness"], "status": "researched"
+  },
+  {
+    "id": "move-09",
+    "name": "フォア限定・全幅カバー",
+    "category": ["フットワーク・身体操作", "移動", "回り込み"],
+    "summary": "左右への球出しをすべてフォアで処理し、回り込みと外側への移動を連続させる。",
+    "disciplines": ["both"], "formats": ["球出し"], "playerCount": {"min": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 5, "max": 10},
+    "tags": ["フォア限定", "回り込み", "全幅", "持久力"],
+    "cues": ["バック側は早くボール後方へ入る", "外側は守備弾道を許可する", "短時間高品質で行う"],
+    "media": ["usta-quickness"], "sources": ["usta-quickness"], "status": "researched"
+  },
+  {
+    "id": "move-10",
+    "name": "可変ボール・2バウンドキャッチ",
+    "category": ["フットワーク・身体操作", "知覚", "可変練習"],
+    "summary": "テニス球、フォーム球、大小のボールをランダムに落とし、軌道へ適応して捕る。",
+    "disciplines": ["both"], "formats": ["リアクション", "身体操作"], "playerCount": {"min": 2},
+    "environments": ["court", "gym", "home"], "equipment": ["varied-balls"], "intensity": "low", "durationMinutes": {"min": 5, "max": 10},
+    "tags": ["予測", "視覚", "軌道適応", "色々なボール"],
+    "cues": ["ボールごとの落下速度を見る", "先に決め打ちしない", "捕球時の姿勢を安定させる"],
+    "media": ["itf-fitness"], "sources": ["itf-fitness"], "status": "derived"
+  },
+  {
+    "id": "move-11",
+    "name": "非利き手・投捕回旋",
+    "category": ["フットワーク・身体操作", "協調性", "両側性"],
+    "summary": "異なる大きさのボールを非利き手でも投げ捕りし、左右の回旋協調を作る。",
+    "disciplines": ["both"], "formats": ["身体操作"], "playerCount": {"min": 1, "max": 2},
+    "environments": ["court", "gym", "home"], "equipment": ["varied-balls", "wall"], "intensity": "low", "durationMinutes": {"min": 5, "max": 10},
+    "tags": ["両側性", "投球", "協調性", "非利き手"],
+    "cues": ["脚から回旋を始める", "投げた後も姿勢を保つ", "左右の不得意差を観察する"],
+    "media": ["nsca-tennis-core"], "sources": ["nsca-tennis-core"], "status": "derived"
+  },
+  {
+    "id": "move-12",
+    "name": "スワイショウ・脱力回旋",
+    "category": ["フットワーク・身体操作", "感覚", "脱力"],
+    "summary": "腕を受動的に振り、足裏から体幹、腕へ伝わる回旋と脱力を観察する。",
+    "disciplines": ["both"], "formats": ["身体操作", "セルフ"], "playerCount": {"min": 1, "max": 1},
+    "environments": ["court", "gym", "home"], "equipment": [], "intensity": "low", "durationMinutes": {"min": 2, "max": 5},
+    "tags": ["スワイショウ", "脱力", "回旋", "身体感覚"],
+    "cues": ["腕を自力で振り回さない", "足裏と骨盤の回転を感じる", "痛みやめまいがあれば止める"],
+    "media": ["swai-video"], "sources": ["nsca-tennis-core", "swai-video"], "status": "derived",
+    "safetyNotes": ["テニス技能への直接効果を断定せず、低強度の感覚づくりとして扱う。"]
+  }
+]

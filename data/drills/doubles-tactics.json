@@ -1,0 +1,112 @@
+[
+  {
+    "id": "tac-d-01",
+    "name": "サーブ連動ポーチ",
+    "category": ["ダブルス戦術", "サーブ側", "ポーチ"],
+    "summary": "サーブのコースを決め、ネット役が返球コースへ斜め前に入ってポーチする。",
+    "disciplines": ["doubles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 3, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["ポーチ", "サーブ連動", "斜め前", "コミュニケーション"],
+    "cues": ["サーブがバウンドする頃から前へ入る", "横だけでなく斜め前へ動く", "サーバーは空いた側をカバーする"],
+    "media": ["usta-poach"], "sources": ["usta-poach"], "status": "researched"
+  },
+  {
+    "id": "tac-d-02",
+    "name": "フェイクポーチ＆ステイ",
+    "category": ["ダブルス戦術", "サーブ側", "フェイク"],
+    "summary": "ネット役がポーチの初動を見せて戻り、ストレートまたは中央を待つ。",
+    "disciplines": ["doubles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 3, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "medium", "durationMinutes": {"min": 10, "max": 20},
+    "tags": ["フェイクポーチ", "ステイ", "読み", "コミュニケーション"],
+    "cues": ["相手が打つ前に動きを見せる", "戻る足を準備しておく", "サインをサーバーと共有する"],
+    "media": ["usta-reverse-poach"], "sources": ["usta-reverse-poach"], "status": "researched"
+  },
+  {
+    "id": "tac-d-03",
+    "name": "オーストラリアン・方向固定",
+    "category": ["ダブルス戦術", "サーブ側", "オーストラリアン"],
+    "summary": "サーバーとネット役が同じ側に構え、リターン方向を限定して次球を狙う。",
+    "disciplines": ["doubles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 3, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["オーストラリアン", "フォーメーション", "サイン"],
+    "cues": ["サーブ前に担当方向を決める", "ネット役はリターン視界を遮りすぎない", "サーバーは指定側へ素早く移動する"],
+    "media": ["usta-australian"], "sources": ["usta-australian"], "status": "researched"
+  },
+  {
+    "id": "tac-d-04",
+    "name": "Iフォーメーション・左右コール",
+    "category": ["ダブルス戦術", "サーブ側", "Iフォーメーション"],
+    "summary": "ネット役が中央に低く構え、サインした方向へ動いて返球を限定する。",
+    "disciplines": ["doubles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 3, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["Iフォーメーション", "サイン", "サーブ連動"],
+    "cues": ["ネット役はサーブ軌道を妨げない", "サーブ前に移動方向を合意する", "サーバーは逆側を担当する"],
+    "media": ["usta-video-index"], "sources": ["usta-poach", "usta-australian"], "status": "derived"
+  },
+  {
+    "id": "tac-d-05",
+    "name": "Iフォーメーション攻略・3択",
+    "category": ["ダブルス戦術", "リターン側", "対Iフォーメーション"],
+    "summary": "クロス、ストレート、ロブを事前に宣言し、同じ構えから打ち分ける。",
+    "disciplines": ["doubles"], "formats": ["サーブ＆リターン", "ポイント"], "playerCount": {"min": 3, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["対Iフォーメーション", "リターン", "3択", "偽装"],
+    "cues": ["ネット役の動きを最後まで見る", "ライン際ではなく安全なゾーンを狙う", "パートナーとリターン後の担当を決める"],
+    "media": ["usta-defeat-i"], "sources": ["usta-defeat-i"], "status": "researched"
+  },
+  {
+    "id": "tac-d-06",
+    "name": "ダウンザライン・見せ球",
+    "category": ["ダブルス戦術", "リターン側", "ストレート"],
+    "summary": "前衛が中央へ寄る条件を読み、安全幅のあるストレートリターンを混ぜる。",
+    "disciplines": ["doubles"], "formats": ["サーブ＆リターン", "ポイント"], "playerCount": {"min": 3, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 10, "max": 20},
+    "tags": ["ダウンザライン", "リターン", "前衛牽制"],
+    "cues": ["相手前衛の位置と癖を見る", "サイドラインから内側へ余白を取る", "毎回ストレートに固執しない"],
+    "media": ["usta-video-index"], "sources": ["usta-video-index"], "status": "derived"
+  },
+  {
+    "id": "tac-d-07",
+    "name": "クロス低リターン・足元",
+    "category": ["ダブルス戦術", "リターン側", "クロス"],
+    "summary": "サーブ＆ボレーまたは前進するサーバーの足元へ、低いクロスリターンを送る。",
+    "disciplines": ["doubles"], "formats": ["サーブ＆リターン", "ポイント"], "playerCount": {"min": 3, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 10, "max": 20},
+    "tags": ["クロスリターン", "足元", "サーブボレー"],
+    "cues": ["ネット上の高さを抑える", "相手前衛へ浮かせない", "返球後に前へ入る選択を持つ"],
+    "media": ["usta-return-strategy", "usta-serve-volley-counter"], "sources": ["usta-return-strategy", "usta-serve-volley-counter"], "status": "derived"
+  },
+  {
+    "id": "tac-d-08",
+    "name": "ノーバウンド・2アップ",
+    "category": ["ダブルス戦術", "ネット支配", "2アップ"],
+    "summary": "両組ともボールをバウンドさせず、前進・間合い・連携を磨く。",
+    "disciplines": ["doubles"], "formats": ["ゲーム"], "playerCount": {"min": 4, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "medium", "durationMinutes": {"min": 10, "max": 20},
+    "tags": ["2アップ", "ノーバウンド", "反応", "ネット支配"],
+    "cues": ["二人が同じ深さを保つ", "中央球の担当を声で決める", "相手の足元へ沈める"],
+    "media": ["usta-no-bounce"], "sources": ["usta-no-bounce"], "status": "researched"
+  },
+  {
+    "id": "tac-d-09",
+    "name": "2アップ・中央圧縮",
+    "category": ["ダブルス戦術", "ネット支配", "ポジショニング"],
+    "summary": "二人で中央を圧縮し、相手に低確率な外側パスを打たせる。",
+    "disciplines": ["doubles"], "formats": ["制約ポイント"], "playerCount": {"min": 4, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["2アップ", "中央", "ポジショニング", "連携"],
+    "cues": ["ボール側の選手が前へ出る", "パートナーは中央の穴を埋める", "二人の前後差を大きくしない"],
+    "media": ["usta-net-offense"], "sources": ["usta-net-offense"], "status": "researched"
+  },
+  {
+    "id": "tac-d-10",
+    "name": "ディングルス・移行判断",
+    "category": ["ダブルス戦術", "ゲーム", "ディングルス"],
+    "summary": "2球をシングルスで同時開始し、片方が終わった瞬間に残り1球でダブルスへ移行する。",
+    "disciplines": ["doubles"], "formats": ["ゲーム"], "playerCount": {"min": 4, "max": 4},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["ディングルス", "状況変化", "コミュニケーション", "判断"],
+    "cues": ["残った球へ切り替える声を出す", "移行時に衝突しない", "シングルス位置からダブルス位置へ素早く変える"],
+    "media": ["usta-dingles"], "sources": ["usta-dingles"], "status": "researched"
+  }
+]

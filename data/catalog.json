@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "updatedAt": "2026-08-04",
+  "target": "competitive",
+  "totalDrills": 108,
+  "files": [
+    { "id": "technical", "label": "技術", "color": "#2563EB", "path": "drills/technical.json", "count": 46 },
+    { "id": "movement", "label": "フットワーク・身体操作", "color": "#0D9488", "path": "drills/movement.json", "count": 12 },
+    { "id": "singles-tactics", "label": "シングルス戦術", "color": "#7C3AED", "path": "drills/singles-tactics.json", "count": 10 },
+    { "id": "doubles-tactics", "label": "ダブルス戦術", "color": "#DB2777", "path": "drills/doubles-tactics.json", "count": 10 },
+    { "id": "physical", "label": "フィジカル", "color": "#EA580C", "path": "drills/physical.json", "count": 22 },
+    { "id": "mental-recovery", "label": "メンタル・準備・回復", "color": "#4F46E5", "path": "drills/mental-recovery.json", "count": 8 }
+  ],
+  "notes": [
+    "名称は一覧で区別できるよう、刺激・制約・目的のいずれかを含めた。",
+    "status=researchedは掲載資料に直接対応する内容、status=derivedは複数資料の原則から競技練習へ構成した内容。",
+    "フィジカル種目の回数・強度は個人のトレーニング歴と専門家の評価に合わせる。"
+  ]
+}

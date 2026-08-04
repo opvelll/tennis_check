@@ -1,0 +1,374 @@
+{
+  "version": 1,
+  "checkedAt": "2026-08-04",
+  "sources": [
+    {
+      "id": "usta-video-index",
+      "title": "USTA Tips and Instruction for Improving Tennis",
+      "organization": "USTA",
+      "kind": "video-index",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction.html",
+      "note": "技術・戦術・メンタルの動画付き記事一覧。"
+    },
+    {
+      "id": "usta-forehand",
+      "title": "Perfecting Your Forehand",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--get-your-forehand-flowing.html",
+      "note": "ユニットターンと非利き手の使い方。"
+    },
+    {
+      "id": "usta-runaround-forehand",
+      "title": "Go From Backhand to Forehand",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-game--.html",
+      "note": "回り込みフォアを選ぶ時間とコート幾何。"
+    },
+    {
+      "id": "usta-slice-backhand",
+      "title": "Hitting the Slice Backhand",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/tennis-techniques--hitting-the-slice-backhand.html",
+      "note": "ネットテープ、セルフ、ラリー、深さの段階練習。"
+    },
+    {
+      "id": "usta-serve",
+      "title": "Perfecting the Serve",
+      "organization": "USTA",
+      "kind": "article",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--serve.html",
+      "note": "トス、回転、コース、スロー・トゥ・ファスト。"
+    },
+    {
+      "id": "usta-serve-placement",
+      "title": "Service Placement",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/tennis-techniques--service-placement.html",
+      "note": "左右手の協調とサーブの狙い分け。"
+    },
+    {
+      "id": "usta-vary-serve",
+      "title": "Varying Your Serve",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/quick-tennis-tips--varying-your-serve.html",
+      "note": "コース・回転・速度の変化。"
+    },
+    {
+      "id": "usta-pressure-serve",
+      "title": "Pressure Serve Drill",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/the-mental-game--pressure-serve-drill.html",
+      "note": "プレッシャー下でのサーブ練習。"
+    },
+    {
+      "id": "usta-return-techniques",
+      "title": "The Return Game",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/tennis-techniques--the-return-game.html",
+      "note": "サイドシャッフル、前の打点、反応。"
+    },
+    {
+      "id": "usta-return-strategy",
+      "title": "Returning First and Second Serves",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/tennis-strategy--returning-first-and-second-serves.html",
+      "note": "ファーストの確率とセカンドへの前進。"
+    },
+    {
+      "id": "usta-lefty-return",
+      "title": "Returning a Lefty Serve",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--returning-a-lefty-serve.html",
+      "note": "左利きスライスサーブへの位置調整。"
+    },
+    {
+      "id": "usta-volley",
+      "title": "Perfecting the Volley",
+      "organization": "USTA",
+      "kind": "article",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/learning-the-basics--volleys.html",
+      "note": "深浅左右のコントロールと攻守判断。"
+    },
+    {
+      "id": "usta-high-volley",
+      "title": "High Stretch Volley",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-game--high-stretch-volley.html",
+      "note": "高く遠いボレーの状況判断。"
+    },
+    {
+      "id": "usta-drop-volley",
+      "title": "The Drop Volley",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--tips-for-a-successful-drop-volley.html",
+      "note": "深いアプローチ、スプリット、ネットへの詰め。"
+    },
+    {
+      "id": "usta-overhead",
+      "title": "Master the Overhead",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--tips-for-mastering-the-overhead.html",
+      "note": "ボールの後方へ入るスマッシュ動作。"
+    },
+    {
+      "id": "usta-smash-attack",
+      "title": "Smash Attack",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--smash-attack.html",
+      "note": "ベースライン、ボレー、スマッシュを連結。"
+    },
+    {
+      "id": "usta-quickness",
+      "title": "Tennis Specific Drills to Improve Quickness on Court",
+      "organization": "USTA Player Development",
+      "kind": "pdf",
+      "url": "https://s3.amazonaws.com/ustaassets/assets/1/usta_import/usta/dps/doc_437_1373.pdf#page=189",
+      "note": "USTAマニュアル内。Close and Drop、Protect Your Turf、Forehand Only、Hi-Lo、Transition、2 Coaches。"
+    },
+    {
+      "id": "usta-court-position",
+      "title": "Court Positioning",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--court-positioning.html",
+      "note": "Ready, Rally and Recover。"
+    },
+    {
+      "id": "usta-target-practice",
+      "title": "Target Practice",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--target-practice.html",
+      "note": "短時間での深さと狙いの練習。"
+    },
+    {
+      "id": "usta-approach",
+      "title": "Approaching the Net in Singles",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--approaching-the-net-in-singles.html",
+      "note": "シングルスのアプローチとネットへの移行。"
+    },
+    {
+      "id": "usta-runner-pusher",
+      "title": "Beating a Runner-Pusher",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/tactical-tennis--playing-the-runner-pusher.html",
+      "note": "逆を突く、短く呼ぶなどの戦術。"
+    },
+    {
+      "id": "usta-baseliner",
+      "title": "Beating an Aggressive Baseliner",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/tactical-tennis--playing-the-aggressive-baseliner.html",
+      "note": "攻撃的ベースライナーへの対処。"
+    },
+    {
+      "id": "usta-serve-volley-counter",
+      "title": "Beating a Serve-Volleyer",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/tactical-tennis--playing-the-serve-and-volleyer.html",
+      "note": "サーブ＆ボレーへのリターン戦術。"
+    },
+    {
+      "id": "usta-poach",
+      "title": "Poaching in Doubles",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-game--poaching-in-doubles.html",
+      "note": "相手の打球状況からポーチを判断。"
+    },
+    {
+      "id": "usta-reverse-poach",
+      "title": "The Reverse Poach",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/the-reverse-poach.html",
+      "note": "フェイクポーチ。"
+    },
+    {
+      "id": "usta-australian",
+      "title": "Australian Formation in Doubles",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--australian-formation-doubles.html",
+      "note": "オーストラリアンフォーメーション。"
+    },
+    {
+      "id": "usta-defeat-i",
+      "title": "Defeating the I-Formation",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--defeating-the-i-formation.html",
+      "note": "Iフォーメーションへのリターン。"
+    },
+    {
+      "id": "usta-net-offense",
+      "title": "Offense at the Net",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--offense-at-the-net.html",
+      "note": "ダブルスで攻撃的位置を維持する。"
+    },
+    {
+      "id": "usta-no-bounce",
+      "title": "No-Bounce Doubles",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/fun-tennis-games--no-bounce-doubles.html",
+      "note": "ネット攻撃を促すノーバウンドゲーム。"
+    },
+    {
+      "id": "usta-dingles",
+      "title": "Dingles",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/fun-tennis-games--dingles.html",
+      "note": "シングルスとダブルスを混ぜた4人ゲーム。"
+    },
+    {
+      "id": "itf-fitness",
+      "title": "Fitness Training",
+      "organization": "ITF",
+      "kind": "pdf",
+      "url": "https://www.itftennis.com/media/2296/conditioning-fitness-training.pdf",
+      "note": "反応、ファンドリル、プライオメトリクス、安定性、持久力。"
+    },
+    {
+      "id": "itf-endurance",
+      "title": "Tennis Science: Endurance Training",
+      "organization": "ITF",
+      "kind": "article",
+      "url": "https://www.itftennis.com/en/news-and-media/articles/tennis-science-endurance-training/",
+      "note": "オンコート持久力のType 1〜3。"
+    },
+    {
+      "id": "itf-flexibility",
+      "title": "Tennis Science: Flexibility Training",
+      "organization": "ITF",
+      "kind": "article",
+      "url": "https://www.itftennis.com/en/news-and-media/articles/tennis-science-flexibility-training/",
+      "note": "静的・動的・PNFの使い分け。"
+    },
+    {
+      "id": "usta-dynamic-warmup",
+      "title": "Dynamic Warm-up and Flexibility Training for Tennis",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/dynamic-warm-up-and-flexibility-training.html",
+      "note": "試合・練習前の動的ウォームアップ。"
+    },
+    {
+      "id": "usta-ten-minute-warmup",
+      "title": "The 10-Minute Warm-up",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/improve-your-tennis-game--the-10-minute-warm-up.html",
+      "note": "ミニテニスからサーブ・リターンまでを1分ずつつなぐ。"
+    },
+    {
+      "id": "usta-pre-match",
+      "title": "Pre-Match Preparation",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/pre-match-preparation.html",
+      "note": "試合前の安全な準備。"
+    },
+    {
+      "id": "usta-circuit",
+      "title": "Circuit Training for Tennis",
+      "organization": "USTA Player Development",
+      "kind": "pdf",
+      "url": "https://s3.amazonaws.com/ustaassets/assets/1/usta_import/usta/dps/doc_437_1373.pdf#page=191",
+      "note": "USTAマニュアル内。筋力・持久力サーキット。"
+    },
+    {
+      "id": "nsca-tennis-core",
+      "title": "Tennis: Developing the Core",
+      "organization": "NSCA",
+      "kind": "article",
+      "url": "https://www.nsca.com/education/articles/kinetic-select/tennis/",
+      "note": "回旋を含む三平面の体幹と運動連鎖。"
+    },
+    {
+      "id": "nsca-plyometrics",
+      "title": "Plyometric Exercises",
+      "organization": "NSCA",
+      "kind": "article",
+      "url": "https://www.nsca.com/education/articles/kinetic-select/plyometric-exercises/",
+      "note": "SSC、低頻度・低ボリューム、動作習得。"
+    },
+    {
+      "id": "usta-shoulder-elbow",
+      "title": "Prevention of Shoulder and Elbow Injuries",
+      "organization": "USTA Player Development",
+      "kind": "pdf",
+      "url": "https://s3.amazonaws.com/ustaassets/assets/1/usta_import/usta/dps/doc_437_391.pdf",
+      "note": "USTAコーチ向けニュースレター。ロートゥハイ、肩甲骨、外旋、前腕種目。"
+    },
+    {
+      "id": "usta-wrist",
+      "title": "Prevention of Wrist Injuries in Tennis Players",
+      "organization": "USTA Player Development",
+      "kind": "pdf",
+      "url": "https://s3.amazonaws.com/ustaassets/assets/1/usta_import/usta/dps/doc_437_1373.pdf#page=173",
+      "note": "USTAマニュアル内。手首・前腕の筋力と持久力。"
+    },
+    {
+      "id": "usta-fitness-tests",
+      "title": "Fitness Testing with Dr. Mark Kovacs",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/stay-current/national/fitness-testing-with-dr--mark-kovacs-at-usta-all-american-colleg.html",
+      "note": "20yd、垂直・水平跳び、第一歩、メディシンボール、スパイダー。"
+    },
+    {
+      "id": "usta-routines",
+      "title": "Green Light, Yellow Light: Routines to Succeed",
+      "organization": "USTA",
+      "kind": "article",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/green-light--yellow-light--routines-to-succeed-on-the-tennis-cou.html",
+      "note": "Respond、Recover、Refocus、Readyとミス後のリセット。"
+    },
+    {
+      "id": "itf-anxiety",
+      "title": "How to Deal with Anxiety on a Tennis Court",
+      "organization": "ITF",
+      "kind": "article",
+      "url": "https://www.itftennis.com/en/news-and-media/articles/how-to-deal-with-anxiety-on-a-tennis-court/",
+      "note": "呼吸、ルーティン、プレッシャー状況の再現。"
+    },
+    {
+      "id": "usta-visualization",
+      "title": "Visualizing Success - Part II",
+      "organization": "USTA",
+      "kind": "video-page",
+      "url": "https://www.usta.com/en/home/improve/tips-and-instruction/national/the-mental-game--visualize-success--part-2-.html",
+      "note": "具体的な計画を持つイメージ練習。"
+    },
+    {
+      "id": "swai-video",
+      "title": "中医師が教える4つのスワイショウのやり方",
+      "organization": "沈再文の気功健康教室",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=barTmj92t_8",
+      "note": "腕を脱力して回旋する動作だけを参照する。動画内の疾病改善等の主張はカタログへ採用しない。"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+[
+  {
+    "id": "tac-s-01",
+    "name": "クロス3本から変更",
+    "category": ["シングルス戦術", "ラリー構築", "方向転換"],
+    "summary": "最初の3球をクロスへ深く入れ、4球目以降は短球だけストレートへ変える。",
+    "disciplines": ["singles"], "formats": ["制約ラリー", "ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "medium", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["クロス", "方向転換", "短球判断", "ラリー構築"],
+    "cues": ["深い球では無理に変えない", "変更後の空きコートを守る", "短球の定義を事前に揃える"],
+    "media": ["usta-target-practice"], "sources": ["usta-target-practice"], "status": "derived"
+  },
+  {
+    "id": "tac-s-02",
+    "name": "センターボール・ニュートラル化",
+    "category": ["シングルス戦術", "守備", "中立化"],
+    "summary": "走らされた球を高さと深さのある中央へ返し、相手の角度を消して立て直す。",
+    "disciplines": ["singles"], "formats": ["球出し", "ポイント"], "playerCount": {"min": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 10, "max": 20},
+    "tags": ["守備", "中央", "深さ", "リカバリー"],
+    "cues": ["守備でライン際を狙わない", "高さで回復時間を買う", "返球後すぐ守備位置へ戻る"],
+    "media": ["usta-court-position"], "sources": ["usta-court-position"], "status": "derived"
+  },
+  {
+    "id": "tac-s-03",
+    "name": "サーブ＋1・フォア確保",
+    "category": ["シングルス戦術", "サーブ局面", "サーブプラス1"],
+    "summary": "サーブのコースから予想される返球を読み、次球をフォアで攻撃する。",
+    "disciplines": ["singles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 15, "max": 30},
+    "tags": ["サーブプラス1", "フォアハンド", "予測", "攻撃"],
+    "cues": ["サーブ前に次球の優先コースを決める", "サーブ後の着地を整える", "回り込みすぎて逆を空けない"],
+    "media": ["usta-serve-placement"], "sources": ["usta-serve-placement", "usta-vary-serve"], "status": "derived"
+  },
+  {
+    "id": "tac-s-04",
+    "name": "ワイドサーブ・オープンコート",
+    "category": ["シングルス戦術", "サーブ局面", "ワイド展開"],
+    "summary": "ワイドサーブで相手を外へ出し、返球を空いた反対側へ展開する。",
+    "disciplines": ["singles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["ワイドサーブ", "オープンコート", "サーブプラス1"],
+    "cues": ["甘いワイドは角度を逆用される", "返球が鋭ければ中央へ中立化する", "決め球の余白を確保する"],
+    "media": ["usta-vary-serve"], "sources": ["usta-vary-serve"], "status": "derived"
+  },
+  {
+    "id": "tac-s-05",
+    "name": "リターン＋1・深い中央",
+    "category": ["シングルス戦術", "リターン局面", "中立化"],
+    "summary": "ファーストリターンを中央深く返し、次球でクロスのラリー形を作る。",
+    "disciplines": ["singles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["リターンプラス1", "中央", "中立化", "ラリー開始"],
+    "cues": ["まずリターンを深くする", "返球方向から次球位置を予測する", "不利な三球目で方向変更しない"],
+    "media": ["usta-return-strategy"], "sources": ["usta-return-strategy"], "status": "derived"
+  },
+  {
+    "id": "tac-s-06",
+    "name": "アプローチ・相手の逆",
+    "category": ["シングルス戦術", "ネット移行", "アプローチ"],
+    "summary": "短球を相手の移動方向の逆へ深く運び、返球角度を制限してネットへ入る。",
+    "disciplines": ["singles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls", "targets"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["アプローチ", "逆を突く", "ネット移行"],
+    "cues": ["相手を観察してから方向を選ぶ", "アプローチ後のスプリットを省かない", "返球可能角度の二等分線を守る"],
+    "media": ["usta-approach"], "sources": ["usta-approach"], "status": "researched"
+  },
+  {
+    "id": "tac-s-07",
+    "name": "ドロップ→次球ロブ",
+    "category": ["シングルス戦術", "前後揺さぶり", "ドロップ"],
+    "summary": "深い球で相手を下げてドロップし、追いつかれたら次球ロブを選ぶ。",
+    "disciplines": ["singles"], "formats": ["パターン", "ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "medium", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["ドロップ", "ロブ", "前後", "予測"],
+    "cues": ["相手が下がった時だけドロップする", "打った後は前へ入る", "相手が詰めれば早めにロブを準備する"],
+    "media": ["usta-runner-pusher"], "sources": ["usta-runner-pusher"], "status": "derived"
+  },
+  {
+    "id": "tac-s-08",
+    "name": "ランナー崩し・後ろ／前",
+    "category": ["シングルス戦術", "相手別", "ランナープッシャー"],
+    "summary": "相手の逆を突く深球と短球を混ぜ、横だけでなく前後へ動かす。",
+    "disciplines": ["singles"], "formats": ["制約ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 15, "max": 30},
+    "tags": ["相手別", "前後", "逆を突く", "忍耐"],
+    "cues": ["速さだけで押し切らない", "相手の回復方向を見る", "短球の後はネットで終える準備をする"],
+    "media": ["usta-runner-pusher"], "sources": ["usta-runner-pusher"], "status": "researched"
+  },
+  {
+    "id": "tac-s-09",
+    "name": "強打ベースライナー・リズム破壊",
+    "category": ["シングルス戦術", "相手別", "攻撃的ベースライナー"],
+    "summary": "深い中央、高い回転、低いスライスを使い、相手の同じ打点とテンポを崩す。",
+    "disciplines": ["singles"], "formats": ["制約ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 15, "max": 30},
+    "tags": ["相手別", "変化", "リズム", "中立化"],
+    "cues": ["短く甘い変化球を避ける", "相手の得意な打点を外す", "守備から無理に攻撃へ飛ばない"],
+    "media": ["usta-baseliner"], "sources": ["usta-baseliner"], "status": "researched"
+  },
+  {
+    "id": "tac-s-10",
+    "name": "サーブ＆ボレー対策・低＋ロブ",
+    "category": ["シングルス戦術", "相手別", "サーブ＆ボレー"],
+    "summary": "低いリターンで最初のボレーを打たせ、次球パスかロブを選ぶ。",
+    "disciplines": ["singles"], "formats": ["サーブ＆リターン", "ポイント"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "high", "durationMinutes": {"min": 12, "max": 25},
+    "tags": ["対サーブボレー", "足元", "パッシング", "ロブ"],
+    "cues": ["一発で抜こうとしない", "最初の返球を足元へ沈める", "相手の詰め方で次球を決める"],
+    "media": ["usta-serve-volley-counter"], "sources": ["usta-serve-volley-counter"], "status": "researched"
+  }
+]

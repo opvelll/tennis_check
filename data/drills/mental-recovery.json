@@ -1,0 +1,92 @@
+[
+  {
+    "id": "prep-01",
+    "name": "ダイナミック・テニスウォームアップ",
+    "category": ["メンタル・準備・回復", "準備", "動的ウォームアップ"],
+    "summary": "体温を上げ、動的可動域、加減速、肩の準備を順に行って打球へ移る。",
+    "disciplines": ["both"], "formats": ["ウォームアップ"], "playerCount": {"min": 1},
+    "environments": ["court", "gym"], "equipment": ["resistance-band-optional", "jump-rope-optional"], "intensity": "low", "durationMinutes": {"min": 8, "max": 15},
+    "tags": ["ウォームアップ", "動的ストレッチ", "準備", "肩"],
+    "cues": ["軽い移動から段階的に速くする", "反動ではなく制御して可動域を広げる", "最後にテニス固有の動きを入れる"],
+    "media": ["usta-dynamic-warmup"], "sources": ["usta-dynamic-warmup", "itf-flexibility"], "status": "researched",
+    "safetyNotes": ["高強度直前の長い静的ストレッチは別枠にする。"]
+  },
+  {
+    "id": "prep-02",
+    "name": "10分ショット接続ウォームアップ",
+    "category": ["メンタル・準備・回復", "準備", "オンコート"],
+    "summary": "ミニテニスから中央、ストレート、クロス、ネット、サーブ＋1へ1分ずつ進める。",
+    "disciplines": ["both"], "formats": ["ウォームアップ", "ラリー"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "low", "durationMinutes": {"min": 10, "max": 10},
+    "tags": ["10分", "ウォームアップ", "全ショット", "接続"],
+    "cues": ["最初から速度を求めない", "方向変更時に外側の球へ集中する", "最後にサーブ・リターン・次球まで行う"],
+    "media": ["usta-ten-minute-warmup"], "sources": ["usta-ten-minute-warmup"], "status": "researched"
+  },
+  {
+    "id": "mental-01",
+    "name": "グリーン・4ステップルーティン",
+    "category": ["メンタル・準備・回復", "メンタル", "ポイント間"],
+    "summary": "通常のポイント間をRespond、Recover、Refocus、Readyの順で整える。",
+    "disciplines": ["both"], "formats": ["ルーティン", "ポイント"], "playerCount": {"min": 1, "max": 2},
+    "environments": ["court", "home"], "equipment": ["racket-optional"], "intensity": "low", "durationMinutes": {"min": 5, "max": 15},
+    "tags": ["ポイント間", "集中", "ルーティン", "再集中"],
+    "cues": ["直前の結果への反応を短くする", "呼吸と歩行で回復する", "次のサーブ／リターン＋1を決めてから構える"],
+    "media": ["usta-routines"], "sources": ["usta-routines"], "status": "researched"
+  },
+  {
+    "id": "mental-02",
+    "name": "イエロー・ミス後リセット",
+    "category": ["メンタル・準備・回復", "メンタル", "感情調整"],
+    "summary": "連続ミスや緊張時に通常より時間を取り、呼吸・置換語・次の単純な行動へ戻す。",
+    "disciplines": ["both"], "formats": ["ルーティン", "プレッシャー"], "playerCount": {"min": 1, "max": 2},
+    "environments": ["court", "home"], "equipment": [], "intensity": "low", "durationMinutes": {"min": 3, "max": 10},
+    "tags": ["ミス後", "感情調整", "呼吸", "リセット"],
+    "cues": ["ミスの映像を消して望む映像へ置き換える", "長く吐いて心拍を落ち着ける", "次の一つだけの行動語を決める"],
+    "media": ["usta-routines"], "sources": ["usta-routines", "itf-anxiety"], "status": "researched"
+  },
+  {
+    "id": "mental-03",
+    "name": "サーブ前・固定リチュアル",
+    "category": ["メンタル・準備・回復", "メンタル", "サーブ"],
+    "summary": "呼吸、狙い、バウンド回数、視線、始動を固定し、得点状況が変わっても再現する。",
+    "disciplines": ["both"], "formats": ["ルーティン", "サーブ"], "playerCount": {"min": 1, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "low", "durationMinutes": {"min": 5, "max": 15},
+    "tags": ["サーブルーティン", "再現性", "集中", "プレッシャー"],
+    "cues": ["狙いと回転を一言で決める", "毎回同じバウンド数にする", "準備が整う前に始動しない"],
+    "media": ["usta-video-index"], "sources": ["usta-routines", "itf-anxiety"], "status": "researched"
+  },
+  {
+    "id": "mental-04",
+    "name": "リターン前・呼吸スプリット",
+    "category": ["メンタル・準備・回復", "メンタル", "リターン"],
+    "summary": "相手の準備中に呼吸と狙いを整え、トスから視線を固定してインパクトへスプリットする。",
+    "disciplines": ["both"], "formats": ["ルーティン", "リターン"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "low", "durationMinutes": {"min": 5, "max": 15},
+    "tags": ["リターンルーティン", "呼吸", "予測", "スプリットステップ"],
+    "cues": ["ファーストとセカンドの立ち位置を決める", "相手のトスから目を離さない", "返球先を単純化してから構える"],
+    "media": ["usta-return-techniques"], "sources": ["usta-return-techniques", "itf-anxiety"], "status": "derived"
+  },
+  {
+    "id": "mental-05",
+    "name": "1パターン・イメージリハーサル",
+    "category": ["メンタル・準備・回復", "メンタル", "イメージ"],
+    "summary": "具体的なサーブ／リターン＋1を一人称視点で短く想像し、直後に同じパターンを実行する。",
+    "disciplines": ["both"], "formats": ["イメージ", "パターン"], "playerCount": {"min": 1, "max": 2},
+    "environments": ["court", "home"], "equipment": ["racket-optional"], "intensity": "low", "durationMinutes": {"min": 3, "max": 10},
+    "tags": ["イメージ", "戦術", "一人称", "実行意図"],
+    "cues": ["成功結果だけでなく視線と身体感覚を含める", "一度に一つのパターンへ絞る", "想像後すぐ実行して差を確認する"],
+    "media": ["usta-visualization"], "sources": ["usta-visualization"], "status": "researched"
+  },
+  {
+    "id": "recovery-01",
+    "name": "クールダウン＋夜間静的柔軟",
+    "category": ["メンタル・準備・回復", "回復", "柔軟性"],
+    "summary": "練習後に軽い移動で強度を下げ、別枠で静的ストレッチを15〜30秒ずつ行う。",
+    "disciplines": ["both"], "formats": ["クールダウン", "セルフ"], "playerCount": {"min": 1},
+    "environments": ["court", "gym", "home"], "equipment": ["mat-optional"], "intensity": "low", "durationMinutes": {"min": 10, "max": 20},
+    "tags": ["クールダウン", "静的ストレッチ", "柔軟性", "回復"],
+    "cues": ["呼吸を止めない", "軽い不快感までで保持する", "股関節、ハムストリング、体幹、肩後面を確認する"],
+    "media": ["itf-flexibility", "usta-pre-match"], "sources": ["itf-flexibility", "usta-pre-match"], "status": "researched",
+    "safetyNotes": ["痛みのある関節を強く伸ばさない。高強度直前には長時間の静的ストレッチを置かない。"]
+  }
+]
