@@ -1,9 +1,8 @@
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { CourtDiagram } from '../components/court-diagram'
-import { CheckIcon, CloseIcon, ExternalLinkIcon, PlusIcon } from '../components/icons'
+import { ArrowLeftIcon, CheckIcon, ExternalLinkIcon, PlusIcon } from '../components/icons'
 import { categoryByLabel, drillById, sourceById } from '../data/catalog'
-import { useDialogFocus } from '../hooks/use-dialog-focus'
 import { displayValue, disciplineLabels, intensityLabels } from '../lib/labels'
 import { usePersonalStore } from '../store/personal-store'
 
@@ -24,11 +23,9 @@ export function DrillDetailPage() {
   const setPersonalNote = usePersonalStore((state) => state.setPersonalNote)
   const [justCompleted, setJustCompleted] = useState(false)
 
-  function close() {
+  function goBack() {
     navigate(from ?? '/drills', { replace: true })
   }
-
-  const sheetRef = useDialogFocus(close)
 
   useEffect(() => {
     if (!justCompleted) return
@@ -38,19 +35,18 @@ export function DrillDetailPage() {
 
   if (!drill) {
     return (
-      <div className="detail-backdrop">
-        <section aria-labelledby="missing-drill-title" aria-modal="true" className="detail-sheet" ref={sheetRef} role="dialog">
-          <div className="detail-topbar">
-            <button className="detail-close" onClick={close} type="button"><CloseIcon size={20} />閉じる</button>
-            <strong>練習の詳細</strong>
-          </div>
-          <div className="missing-drill">
-            <h1 id="missing-drill-title">練習が見つかりません</h1>
-            <p>項目が削除されたか、URLが正しくない可能性があります。</p>
-            <button className="primary-button" onClick={close} type="button">練習一覧へ戻る</button>
-          </div>
-        </section>
-      </div>
+      <article aria-labelledby="missing-drill-title" className="detail-page">
+        <div className="detail-topbar">
+          <button className="detail-back" onClick={goBack} type="button"><ArrowLeftIcon size={20} />戻る</button>
+          <strong>練習の詳細</strong>
+          <span aria-hidden="true" />
+        </div>
+        <div className="missing-drill">
+          <h1 id="missing-drill-title">練習が見つかりません</h1>
+          <p>項目が削除されたか、URLが正しくない可能性があります。</p>
+          <button className="primary-button" onClick={goBack} type="button">練習一覧へ戻る</button>
+        </div>
+      </article>
     )
   }
 
@@ -75,15 +71,14 @@ export function DrillDetailPage() {
   }
 
   return (
-    <div className="detail-backdrop" onMouseDown={(event) => event.target === event.currentTarget && close()}>
-      <section aria-labelledby="drill-title" aria-modal="true" className="detail-sheet" ref={sheetRef} role="dialog">
-        <div className="detail-topbar">
-          <button className="detail-close" onClick={close} type="button"><CloseIcon size={20} />閉じる</button>
-          <strong>練習の詳細</strong>
-          <span aria-hidden="true" />
-        </div>
+    <article aria-labelledby="drill-title" className="detail-page">
+      <div className="detail-topbar">
+        <button className="detail-back" onClick={goBack} type="button"><ArrowLeftIcon size={20} />戻る</button>
+        <strong>練習の詳細</strong>
+        <span aria-hidden="true" />
+      </div>
 
-        <div className="detail-content">
+      <div className="detail-content">
           <header className="detail-header">
             <p className="detail-breadcrumb" style={{ color: category?.color }}>
               {drill.category.join('　›　')}
@@ -171,16 +166,15 @@ export function DrillDetailPage() {
           <div className="tag-list" aria-label="タグ">
             {drill.tags.map((tag) => <span key={tag}>#{tag}</span>)}
           </div>
-        </div>
+      </div>
 
-        <div className="detail-actions">
-          {selected ? <button className="remove-link" onClick={() => removeDrill(drill.id)} type="button">セットから外す</button> : null}
-          <button className="primary-button detail-primary" onClick={primaryAction} type="button">
-            {selected ? <CheckIcon size={22} /> : <PlusIcon size={22} />}
-            {selected ? (justCompleted ? '記録しました' : '実施済みにする') : 'セットアップに追加'}
-          </button>
-        </div>
-      </section>
-    </div>
+      <div className="detail-actions">
+        {selected ? <button className="remove-link" onClick={() => removeDrill(drill.id)} type="button">セットから外す</button> : null}
+        <button className="primary-button detail-primary" onClick={primaryAction} type="button">
+          {selected ? <CheckIcon size={22} /> : <PlusIcon size={22} />}
+          {selected ? (justCompleted ? '記録しました' : '実施済みにする') : 'セットアップに追加'}
+        </button>
+      </div>
+    </article>
   )
 }

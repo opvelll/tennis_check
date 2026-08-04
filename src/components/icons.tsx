@@ -25,6 +25,14 @@ export function CheckIcon(props: IconProps) {
   )
 }
 
+export function ArrowLeftIcon(props: IconProps) {
+  return (
+    <IconBase {...props}>
+      <path d="m15 5-7 7 7 7M8 12h11" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.8" />
+    </IconBase>
+  )
+}
+
 export function ChevronRightIcon(props: IconProps) {
   return (
     <IconBase {...props}>
