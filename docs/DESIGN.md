@@ -16,7 +16,7 @@
 
 - 全項目を検索・絞り込みする。
 - 項目カードで目的、条件、チェックポイント、動画、コート図を確認する。
-- 任意の項目を1つ以上の自分用セットアップへ追加する。
+- 任意の項目を自分用の標準セットアップへ追加する。
 - カタログ自体にはチェック状態を持たせない。
 
 ### 自分用セットアップ
@@ -25,7 +25,7 @@
 - タイルを押すと実施時刻を記録し、カテゴリ色を最大濃度に戻す。
 - 時間経過に応じて色が薄くなる。
 - カテゴリ、タグ、期限切れ、実施可能条件で絞り込む。
-- セットアップは複数作成可能にする（例：通常、試合前、雨天・自宅）。
+- 初期版はシングルス中心の標準セット1つとし、複数セットは将来の状態移行で追加する。
 
 ### 項目詳細
 
@@ -86,17 +86,17 @@ type PersonalState = {
     defaultFadeDays: number;      // 初期値 3
     fadeMultiplier: number;      // 初期値 1。全項目に適用
   };
-  setups: {
-    id: string;
+  setup: {
+    id: "singles-default";
     name: string;
     drillIds: string[];
-    items: Record<string, {
-      lastCompletedAt?: string;   // ISO 8601
-      completedCount: number;
-      fadeDaysOverride?: number;  // 未設定なら全体デフォルト
-      personalNote?: string;
-    }>;
-  }[];
+  };
+  records: Record<string, {
+    lastCompletedAt?: string;   // ISO 8601
+    completedCount: number;
+    fadeDaysOverride?: number;  // 未設定なら全体デフォルト
+    personalNote?: string;
+  }>;
 };
 ```
 
@@ -177,4 +177,3 @@ type CourtDiagram = {
 - 再読み込み後も実施時刻とセットアップが残る。
 - コート図を持つ項目は、同じSVG記法で表示される。
 - GitHub Pagesのサブパスで直接利用できる。
-
