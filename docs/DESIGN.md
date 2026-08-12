@@ -143,12 +143,14 @@ type CourtDiagram = {
   orientation: "vertical";
   phases: {
     label: string;
-    actors: { id: string; role: string; x: number; y: number }[];
+    description?: string;
+    actors: { id: string; role: "player" | "opponent" | "feeder"; label?: string; x: number; y: number }[];
     equipment: { type: string; x: number; y: number; label?: string }[];
     paths: {
       type: "ball" | "movement";
       points: [number, number][];
       order?: number;
+      showArrow?: boolean;
     }[];
     targets: {
       shape: "rect" | "ellipse" | "polygon";
@@ -160,6 +162,8 @@ type CourtDiagram = {
 ```
 
 表示記号は固定する：選手=青、相手・球出し役=赤、ボール軌道=実線、移動=点線、狙い=黄色半透明、用具=黒、順序=丸数字。
+
+複数の配置は独立したSVG文字列を保存せず、同じ`diagram`内の順序付き`phases`として管理する。矩形・楕円は対角2点、多角形は3点以上、軌道は2点以上を持つ。
 
 ## 8. 永続化と更新
 

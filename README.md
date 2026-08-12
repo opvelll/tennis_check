@@ -20,6 +20,8 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
+開発サーバーでは `http://localhost:5173/tennis_check/#/editor` から練習データと参考資料を編集できます。編集機能とファイル保存APIはローカル開発時だけ有効で、公開ビルドには含まれません。
+
 確認コマンド：
 
 ```sh

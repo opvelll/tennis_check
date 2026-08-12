@@ -7,13 +7,17 @@ const navigation = [
   { to: '/drills', label: '練習一覧', Icon: ListIcon },
 ]
 
+const desktopNavigation = import.meta.env.DEV
+  ? [...navigation, { to: '/editor', label: 'データ編集', Icon: ListIcon }]
+  : navigation
+
 export function AppShell() {
   return (
     <div className="min-h-dvh bg-white text-slate-950">
       <header className="desktop-header">
         <Brand />
         <nav aria-label="メインナビゲーション" className="desktop-nav">
-          {navigation.map(({ to, label }) => (
+          {desktopNavigation.map(({ to, label }) => (
             <NavLink key={to} to={to} className={({ isActive }) => isActive ? 'desktop-nav-link active' : 'desktop-nav-link'}>
               {label}
             </NavLink>

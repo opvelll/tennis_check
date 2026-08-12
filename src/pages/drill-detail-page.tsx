@@ -8,6 +8,22 @@ import { usePersonalStore } from '../store/personal-store'
 
 type DetailLocationState = { from?: string }
 
+function TextListSection({ title, values, ordered = false, className = '' }: {
+  title: string
+  values?: string[]
+  ordered?: boolean
+  className?: string
+}) {
+  if (!values?.length) return null
+  const List = ordered ? 'ol' : 'ul'
+  return (
+    <section className={`detail-section ${className}`.trim()}>
+      <h2>{title}</h2>
+      <List className="detail-text-list">{values.map((value, index) => <li key={`${value}-${index}`}>{value}</li>)}</List>
+    </section>
+  )
+}
+
 export function DrillDetailPage() {
   const { drillId = '' } = useParams()
   const navigate = useNavigate()
@@ -87,14 +103,7 @@ export function DrillDetailPage() {
             <p>{drill.summary}</p>
           </header>
 
-          <section className="detail-section">
-            <h2>チェックポイント</h2>
-            <ul className="cue-list">
-              {drill.cues.map((cue) => (
-                <li key={cue}><span><CheckIcon size={15} /></span>{cue}</li>
-              ))}
-            </ul>
-          </section>
+          <TextListSection title="目的" values={drill.purposes} />
 
           <section className="detail-section">
             <h2>条件</h2>
@@ -109,10 +118,36 @@ export function DrillDetailPage() {
             </dl>
           </section>
 
+          <TextListSection title="セットアップ" values={drill.setup} />
+
           {drill.diagram ? (
             <section className="detail-section">
               <h2>コート配置</h2>
               <CourtDiagram diagram={drill.diagram} />
+            </section>
+          ) : null}
+
+          <TextListSection ordered title="手順" values={drill.steps} />
+
+          <section className="detail-section">
+            <h2>チェックポイント</h2>
+            <ul className="cue-list">
+              {drill.cues.map((cue) => (
+                <li key={cue}><span><CheckIcon size={15} /></span>{cue}</li>
+              ))}
+            </ul>
+          </section>
+
+          <TextListSection title="成功条件" values={drill.successCriteria} />
+          <TextListSection className="error-section" title="よくある失敗" values={drill.commonErrors} />
+
+          {drill.progressions?.length || drill.regressions?.length ? (
+            <section className="detail-section">
+              <h2>難易度調整</h2>
+              <div className="difficulty-grid">
+                {drill.progressions?.length ? <div><h3>難しくする</h3><ul className="detail-text-list">{drill.progressions.map((item, index) => <li key={`${item}-${index}`}>{item}</li>)}</ul></div> : null}
+                {drill.regressions?.length ? <div><h3>簡単にする</h3><ul className="detail-text-list">{drill.regressions.map((item, index) => <li key={`${item}-${index}`}>{item}</li>)}</ul></div> : null}
+              </div>
             </section>
           ) : null}
 

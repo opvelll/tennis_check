@@ -1,23 +1,49 @@
 export type Discipline = 'singles' | 'doubles' | 'both'
 export type Intensity = 'low' | 'medium' | 'high'
 
+export type CourtPoint = [number, number]
+export type CourtActorRole = 'player' | 'opponent' | 'feeder'
+
+export type CourtActor = {
+  id: string
+  role: CourtActorRole
+  label?: string
+  x: number
+  y: number
+}
+
+export type CourtEquipment = {
+  type: string
+  x: number
+  y: number
+  label?: string
+}
+
+export type CourtPath = {
+  type: 'ball' | 'movement'
+  points: CourtPoint[]
+  order?: number
+  showArrow?: boolean
+}
+
+export type CourtTarget = {
+  shape: 'rect' | 'ellipse' | 'polygon'
+  points: CourtPoint[]
+  label?: string
+}
+
+export type CourtPhase = {
+  label: string
+  description?: string
+  actors: CourtActor[]
+  equipment: CourtEquipment[]
+  paths: CourtPath[]
+  targets: CourtTarget[]
+}
+
 export type CourtDiagram = {
   orientation: 'vertical'
-  phases: Array<{
-    label: string
-    actors: Array<{ id: string; role: string; x: number; y: number }>
-    equipment: Array<{ type: string; x: number; y: number; label?: string }>
-    paths: Array<{
-      type: 'ball' | 'movement'
-      points: Array<[number, number]>
-      order?: number
-    }>
-    targets: Array<{
-      shape: 'rect' | 'ellipse' | 'polygon'
-      points: Array<[number, number]>
-      label?: string
-    }>
-  }>
+  phases: CourtPhase[]
 }
 
 export type Drill = {
