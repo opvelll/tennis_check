@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-08-04",
+  "checkedAt": "2026-08-12",
   "sources": [
     {
       "id": "usta-video-index",
@@ -369,6 +369,22 @@
       "kind": "video",
       "url": "https://www.youtube.com/watch?v=barTmj92t_8",
       "note": "腕を脱力して回旋する動作だけを参照する。動画内の疾病改善等の主張はカタログへ採用しない。"
+    },
+    {
+      "id": "sokeibu-hip-video",
+      "title": "【中国武術・太極拳】鼠蹊部（そけいぶ）の可動域を広げて安全に立つエクササイズ（＃101）",
+      "organization": "川津康弘【たんとう功•武術的身体操作•心身のセルフケア】しえんチャンネル",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=UMtLD3Rod4g",
+      "note": "足先を内向きにした立位で、足裏接地と膝・つま先の向きを保ち、鼠径部をたたみながら骨盤を回す動作を参照する。"
+    },
+    {
+      "id": "todai-smr",
+      "title": "【ガチガチに固まった体をほぐす】SMRって知ってますか？",
+      "organization": "【東大式】小林寛道監修 - 運動能力の高め方",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=5gEWFxQOnUg",
+      "note": "SMRの概要、全身10部位の実践、実施前後の身体チェックを参照する。"
     }
   ]
 }

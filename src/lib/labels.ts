@@ -25,6 +25,8 @@ const valueLabels: Record<string, string> = {
   box: 'ボックス',
   'medicine-ball': 'メディシンボール',
   'net-marker': 'ネット目印',
+  'foam-roller': 'フォームローラー',
+  'mat-optional': 'マット（任意）',
 }
 
 export function displayValue(value: string) {

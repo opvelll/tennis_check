@@ -1,0 +1,67 @@
+[
+  {
+    "id": "prep-01",
+    "name": "ダイナミック・テニスウォームアップ",
+    "category": ["コンディショニング", "準備", "動的ウォームアップ"],
+    "summary": "体温を上げ、動的可動域、加減速、肩の準備を順に行って打球へ移る。",
+    "disciplines": ["both"], "formats": ["ウォームアップ"], "playerCount": {"min": 1},
+    "environments": ["court", "gym"], "equipment": ["resistance-band-optional", "jump-rope-optional"], "intensity": "low", "durationMinutes": {"min": 8, "max": 15},
+    "tags": ["ウォームアップ", "動的ストレッチ", "準備", "肩"],
+    "cues": ["軽い移動から段階的に速くする", "反動ではなく制御して可動域を広げる", "最後にテニス固有の動きを入れる"],
+    "media": ["usta-dynamic-warmup"], "sources": ["usta-dynamic-warmup", "itf-flexibility"], "status": "researched",
+    "safetyNotes": ["高強度直前の長い静的ストレッチは別枠にする。"]
+  },
+  {
+    "id": "prep-02",
+    "name": "10分ショット接続ウォームアップ",
+    "category": ["コンディショニング", "準備", "オンコート"],
+    "summary": "ミニテニスから中央、ストレート、クロス、ネット、サーブ＋1へ1分ずつ進める。",
+    "disciplines": ["both"], "formats": ["ウォームアップ", "ラリー"], "playerCount": {"min": 2, "max": 2},
+    "environments": ["court"], "equipment": ["racket", "balls"], "intensity": "low", "durationMinutes": {"min": 10, "max": 10},
+    "tags": ["10分", "ウォームアップ", "全ショット", "接続"],
+    "cues": ["最初から速度を求めない", "方向変更時に外側の球へ集中する", "最後にサーブ・リターン・次球まで行う"],
+    "media": ["usta-ten-minute-warmup"], "sources": ["usta-ten-minute-warmup"], "status": "researched"
+  },
+  {
+    "id": "recovery-01",
+    "name": "クールダウン＋夜間静的柔軟",
+    "category": ["コンディショニング", "回復", "柔軟性"],
+    "summary": "練習後に軽い移動で強度を下げ、別枠で静的ストレッチを15〜30秒ずつ行う。",
+    "disciplines": ["both"], "formats": ["クールダウン", "セルフ"], "playerCount": {"min": 1},
+    "environments": ["court", "gym", "home"], "equipment": ["mat-optional"], "intensity": "low", "durationMinutes": {"min": 10, "max": 20},
+    "tags": ["クールダウン", "静的ストレッチ", "柔軟性", "回復"],
+    "cues": ["呼吸を止めない", "軽い不快感までで保持する", "股関節、ハムストリング、体幹、肩後面を確認する"],
+    "media": ["itf-flexibility", "usta-pre-match"], "sources": ["itf-flexibility", "usta-pre-match"], "status": "researched",
+    "safetyNotes": ["痛みのある関節を強く伸ばさない。高強度直前には長時間の静的ストレッチを置かない。"]
+  },
+  {
+    "id": "conditioning-smr-01",
+    "name": "全身SMR（セルフ筋膜リリース）",
+    "aliases": ["筋膜リリース", "セルフ筋膜リリース", "フォームローリング", "Self-Myofascial Release"],
+    "category": ["コンディショニング", "準備・回復", "フォームローラー"],
+    "summary": "フォームローラーで全身10部位を順に刺激し、運動前後の身体の動かしやすさを確認する。",
+    "purposes": ["運動前後のセルフコンディショニング", "身体の動かしやすさの確認"],
+    "disciplines": ["both"], "formats": ["ウォームアップ", "クールダウン", "セルフ"], "playerCount": {"min": 1, "max": 1},
+    "environments": ["home", "gym", "court-side"], "equipment": ["foam-roller", "mat-optional"], "intensity": "low", "durationMinutes": {"min": 15, "max": 45},
+    "tags": ["SMR", "筋膜リリース", "フォームローラー", "ウォームアップ", "クールダウン", "可動性", "全身"],
+    "setup": ["フォームローラーを安全に転がせる平らなスペースを確保する。", "動かしにくさを感じる動作を一つ選び、実施前の感覚を確認する。"],
+    "steps": [
+      "腓腹筋・ヒラメ筋：ふくらはぎをローラーへ乗せ、足首から膝下までゆっくり往復する。",
+      "前脛骨筋周辺：すねの骨を避けて外側の筋肉へ圧を分散し、足首側から膝下まで動かす。",
+      "ハムストリング：太もも裏をローラーへ乗せ、膝裏を避けて臀部の手前まで動かす。",
+      "大腿外側：横向きになり、膝や股関節の骨を避けながら太もも外側をゆっくり動かす。",
+      "梨状筋周辺：片側の臀部をローラーへ乗せ、脚の角度を調節しながら小さく動かす。",
+      "大腿筋膜張筋周辺：股関節前外側の骨を避け、狭い範囲で圧を調節する。",
+      "大腿四頭筋：うつ伏せで太もも前を乗せ、膝上から股関節手前まで動かす。",
+      "内転筋群：うつ伏せから片脚を横へ開き、太もも内側を膝上から付け根手前まで動かす。",
+      "広背筋：横向きで脇の下から背中外側を乗せ、肩関節を避けて小さく動かす。",
+      "菱形筋・僧帽筋周辺：仰向けで上背部を乗せ、首と腰を避けて肩甲骨周辺を動かす。"
+    ],
+    "cues": ["息を止めず、ゆっくり吐きながら動かす", "体重のかけ方と支持する手足で、無理なく呼吸できる圧に調節する", "広く速く転がさず、気になる範囲を小さく丁寧に動かす", "終了後に同じ動作を行い、動かしやすさを再確認する"],
+    "successCriteria": ["全10部位を、鋭い痛みやしびれを出さずに実施できる。", "実施前後を同じ動作で比較し、身体の感覚を確認できる。"],
+    "commonErrors": ["痛みを我慢して体重をかけすぎる。", "骨や関節の上を直接転がす。", "呼吸を止めて速く往復する。"],
+    "regressions": ["支持する手足へ体重を逃がし、ローラーへかかる圧を軽くする。", "全身を一度に行わず、必要な部位だけに絞る。"],
+    "media": ["todai-smr"], "sources": ["todai-smr"], "status": "researched",
+    "safetyNotes": ["鋭い痛み、しびれ、感覚の異常が出たら直ちに中止する。", "骨、関節、首、腰へローラーで直接強い圧をかけない。", "けがや治療中の症状がある部位は自己判断で行わず、医療・運動の専門家へ相談する。"]
+  }
+]
