@@ -4,9 +4,9 @@ import { emptyFilters, filterDrills } from './filter-drills'
 
 describe('filterDrills', () => {
   it('loads the complete catalog', () => {
-    expect(drills).toHaveLength(110)
+    expect(drills).toHaveLength(111)
     expect(drills).toHaveLength(catalogIndex.totalDrills)
-    expect(new Set(drills.map((drill) => drill.id)).size).toBe(110)
+    expect(new Set(drills.map((drill) => drill.id)).size).toBe(111)
     catalogIndex.files.forEach((category) => {
       const categoryDrills = drills.filter((drill) => drill.category[0] === category.label)
       expect(categoryDrills).toHaveLength(category.count)

@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-08-12",
+  "checkedAt": "2026-08-25",
   "sources": [
     {
       "id": "usta-video-index",
@@ -385,6 +385,14 @@
       "kind": "video",
       "url": "https://www.youtube.com/watch?v=5gEWFxQOnUg",
       "note": "SMRの概要、全身10部位の実践、実施前後の身体チェックを参照する。"
+    },
+    {
+      "id": "amazing-tv-throwing-chain",
+      "title": "【投げ方劇的改善】やり投げ選手権優勝選手が究極のトレーニングを伝授！投げることの本質は〇〇だった！？",
+      "organization": "Amazing TV",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=Nky7m5TwNzI",
+      "note": "6:46〜29:36のメディシンボールとチューブを使った投球連動トレーニングを参照する。テニス用カタログではサーブ系の全身連動へ転用し、動画中の野球・やり投げ固有の技術や効果の主張はそのまま採用しない。"
     }
   ]
 }
