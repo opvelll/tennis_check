@@ -2,6 +2,8 @@
 
 競技者向けテニス練習カタログと、時間経過で色が薄くなる個人チェックリストです。
 
+▶ [Tennis Checkを開く](https://opvelll.github.io/tennis_check/)
+
 ## 主な機能
 
 - シングルス中心の標準30項目を、退色マップとカテゴリ別一覧で表示
@@ -20,7 +22,7 @@ pnpm install --frozen-lockfile
 pnpm dev
 ```
 
-開発サーバーでは `http://localhost:5173/tennis_check/#/editor` から練習データと参考資料を編集できます。編集機能とファイル保存APIはローカル開発時だけ有効で、公開ビルドには含まれません。
+開発サーバーでは[データ編集画面](http://localhost:5173/tennis_check/#/editor)から練習データと参考資料を編集できます。編集機能とファイル保存APIはローカル開発時だけ有効で、公開ビルドには含まれません。
 
 確認コマンド：
 
@@ -28,13 +30,13 @@ pnpm dev
 pnpm check
 ```
 
-ローカルURLは `http://localhost:5173/tennis_check/` です。
+ローカルURLは [http://localhost:5173/tennis_check/](http://localhost:5173/tennis_check/) です。
 
 ## 公開
 
 `master`ブランチへのpushでGitHub Actionsが検査・ビルド・GitHub Pagesへの公開を行います。初回だけリポジトリの Settings → Pages → Source で「GitHub Actions」を選択してください。
 
-公開URL：`https://opvelll.github.io/tennis_check/`
+公開URL：[https://opvelll.github.io/tennis_check/](https://opvelll.github.io/tennis_check/)
 
 ## データ
 
