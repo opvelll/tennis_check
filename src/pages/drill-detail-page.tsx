@@ -8,6 +8,11 @@ import { usePersonalStore } from '../store/personal-store'
 
 type DetailLocationState = { from?: string }
 
+function resolveImageSource(src: string) {
+  if (/^(?:https?:)?\/\//i.test(src) || src.startsWith('data:')) return src
+  return `${import.meta.env.BASE_URL}${src.replace(/^\/+/, '')}`
+}
+
 function TextListSection({ title, values, ordered = false, className = '' }: {
   title: string
   values?: string[]
@@ -73,6 +78,7 @@ export function DrillDetailPage() {
     const source = sourceById.get(sourceId)
     return source ? [source] : []
   })
+  const imageSource = sources.find((source) => currentDrill.media.includes(source.id)) ?? sources[0]
   const playerLabel = currentDrill.playerCount.max && currentDrill.playerCount.max !== currentDrill.playerCount.min
     ? `${currentDrill.playerCount.min}〜${currentDrill.playerCount.max}人`
     : `${currentDrill.playerCount.min}人${currentDrill.playerCount.max ? '' : '〜'}`
@@ -124,6 +130,20 @@ export function DrillDetailPage() {
             <section className="detail-section">
               <h2>コート配置</h2>
               <CourtDiagram diagram={drill.diagram} />
+            </section>
+          ) : null}
+
+          {drill.image ? (
+            <section className="detail-section">
+              <h2>参考画像</h2>
+              <figure className="reference-figure">
+                {imageSource ? (
+                  <a aria-label="参考動画を開く" href={imageSource.url} rel="noreferrer" target="_blank">
+                    <img alt={drill.image.alt} decoding="async" loading="lazy" src={resolveImageSource(drill.image.src)} />
+                  </a>
+                ) : <img alt={drill.image.alt} decoding="async" loading="lazy" src={resolveImageSource(drill.image.src)} />}
+                {drill.image.credit ? <figcaption>{drill.image.credit}</figcaption> : null}
+              </figure>
             </section>
           ) : null}
 

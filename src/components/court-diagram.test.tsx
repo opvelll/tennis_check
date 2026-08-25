@@ -16,7 +16,9 @@ describe('CourtDiagram', () => {
   it('switches phases and renders all supported SVG primitives', async () => {
     const user = userEvent.setup()
     const { container } = render(<CourtDiagram diagram={diagram} />)
-    expect(screen.getByRole('img', { name: 'コート図: 開始配置' })).toBeInTheDocument()
+    expect(screen.getByRole('img', { name: 'コート図: 開始配置' })).toHaveAttribute('viewBox', '0 0 100 216.68')
+    expect(screen.queryByLabelText('コート図の凡例')).not.toBeInTheDocument()
+    expect(screen.getByText('狙い')).toHaveClass('court-label')
     expect(container.querySelector('ellipse')).toBeInTheDocument()
     await user.click(screen.getByRole('tab', { name: /展開/ }))
     expect(screen.getByRole('img', { name: 'コート図: 展開' })).toBeInTheDocument()

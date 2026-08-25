@@ -159,9 +159,8 @@
 .court-toolbar .undo-button { border: 0; margin-left: auto; color: #58645d; }
 .court-toolbar .undo-button:disabled { opacity: .3; }
 .court-instruction { margin: 12px 0 6px; color: #66716a; font-size: 10px; text-align: center; }
-.editor-court-canvas { display: block; width: min(100%, 480px); margin: 0 auto; cursor: crosshair; user-select: none; }
+.editor-court-canvas { display: block; width: min(100%, 320px); margin: 0 auto; cursor: crosshair; user-select: none; }
 .court-handle { fill: #fff; stroke: #2563eb; stroke-width: .7; cursor: grab; }
-.court-label { fill: #fff; font-size: 2.7px; font-weight: 750; paint-order: stroke; stroke: rgb(0 0 0 / .45); stroke-width: .5px; }
 .phase-copy-fields { display: grid; gap: 10px; padding: 14px 0 20px; }
 .court-inspector { border-left: 1px solid var(--border); padding: 22px 20px; background: #fff; }
 .court-inspector h3 { margin: 0 0 20px; font-size: 14px; }

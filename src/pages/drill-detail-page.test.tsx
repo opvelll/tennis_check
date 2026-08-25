@@ -24,4 +24,18 @@ describe('DrillDetailPage', () => {
 
     expect(screen.getByRole('heading', { name: '練習一覧' })).toBeInTheDocument()
   })
+
+  it('shows the drive-volley reference image with its source and base path', () => {
+    render(
+      <MemoryRouter initialEntries={['/drills/tech-net-08']}>
+        <Routes><Route path="drills/:drillId" element={<DrillDetailPage />} /></Routes>
+      </MemoryRouter>,
+    )
+
+    const image = screen.getByRole('img', { name: '奥側のベースラインに球出し役、手前側のサービスライン付近に打球者が立つドライブボレー練習' })
+    expect(image).toHaveAttribute('src', `${import.meta.env.BASE_URL}images/drills/drive-volley-reference.png`)
+    expect(screen.getByRole('heading', { name: '参考画像' })).toBeInTheDocument()
+    expect(screen.getByRole('link', { name: '参考動画を開く' })).toHaveAttribute('href', 'https://www.youtube.com/watch?v=b1dU6DYBHvE&t=155s')
+    expect(screen.getByText(/ぬいさんぽ\/NUI-SANPO.*2:35付近/)).toBeInTheDocument()
+  })
 })
