@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-08-25",
+  "checkedAt": "2026-08-26",
   "sources": [
     {
       "id": "usta-video-index",
@@ -401,6 +401,254 @@
       "kind": "video",
       "url": "https://www.youtube.com/watch?v=Nky7m5TwNzI",
       "note": "6:46〜29:36のメディシンボールとチューブを使った投球連動トレーニングを参照する。テニス用カタログではサーブ系の全身連動へ転用し、動画中の野球・やり投げ固有の技術や効果の主張はそのまま採用しない。"
+    },
+    {
+      "id": "blue-guy-tennis-physique",
+      "title": "The physique of a tennis athlete",
+      "organization": "The Blue Guy",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=wOfW3kZy_lo",
+      "note": "0:59〜1:24の運動連鎖、2:00〜2:49の第一歩・反応、3:39〜3:51の減速、4:32〜4:54の最大筋力、5:55〜6:16のモビリティ、6:56〜7:29の持久力、8:35〜8:57のフットワーク種目名を参照する。動画が示さない回数・負荷・詳細フォームは補わない。"
+    },
+    {
+      "id": "nasm-squat-jump-video",
+      "title": "How to do a Squat Jump | Proper Form & Technique",
+      "organization": "National Academy of Sports Medicine (NASM)",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=tZSYZdtbONc",
+      "note": "足幅、体幹の準備、腕振り、柔らかな着地を確認する。"
+    },
+    {
+      "id": "top-tennis-split-step",
+      "title": "Tennis Footwork | How To Split Step in Tennis",
+      "organization": "Top Tennis Training",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=BuTDEriExqc",
+      "note": "状況別のスプリットステップと着地後の準備姿勢を参照する。"
+    },
+    {
+      "id": "turnfit-cable-woodchop",
+      "title": "How to perform a Cable Wood Chop",
+      "organization": "TurnFit",
+      "kind": "video-page",
+      "url": "https://turnfit.ca/how-to-perform-a-cable-wood-chop/",
+      "note": "高い支点から反対側へ引くセットアップと動作を参照する。"
+    },
+    {
+      "id": "dvids-landmine-rotation",
+      "title": "Landmine Rotation",
+      "organization": "U.S. Marine Corps Training and Education Command",
+      "kind": "video",
+      "url": "https://www.dvidshub.net/video/640981/landmine-rotation",
+      "note": "ランドマイン・ローテーションの実演。00:25の全編を参照する。"
+    },
+    {
+      "id": "carlbo-tennis-shadow",
+      "title": "Tennis Shadowing Repetitive Drills",
+      "organization": "Carlbo Tennis",
+      "kind": "video-page",
+      "url": "https://carlbotennis.com/video-lessons",
+      "note": "フォア、バック、サーブなどのシャドースイング実演を参照する。"
+    },
+    {
+      "id": "powercore-forehand-resisted",
+      "title": "Tennis Instructions: Forehand Resisted",
+      "organization": "Powercore 360",
+      "kind": "video-page",
+      "url": "https://powercore360.com/pages/tennis-instructions",
+      "note": "Ground Strokes Drill #2の抵抗付きフォアハンドと、足・脚・股関節から段階的に動きを作る説明を参照する。"
+    },
+    {
+      "id": "nasm-lateral-lunge",
+      "title": "Functional Training: Compound Workouts for Fitness",
+      "organization": "National Academy of Sports Medicine (NASM)",
+      "kind": "article",
+      "url": "https://blog.nasm.org/functional-training-compound-workouts",
+      "note": "Lateral lungeの足位置、側方への踏み込み、股関節を後方へ引く動作を参照する。"
+    },
+    {
+      "id": "strive-skater-squat",
+      "title": "Exercise Demo - Skater Squats",
+      "organization": "Strive & Uplift",
+      "kind": "video",
+      "url": "https://vimeo.com/394342453",
+      "note": "片脚の安定、胸の位置、膝の前方移動を含むスケータースクワット実演を参照する。"
+    },
+    {
+      "id": "iyca-band-first-step",
+      "title": "Resistance Band Training | Keys to First Step Speed",
+      "organization": "International Youth Conditioning Association",
+      "kind": "video-page",
+      "url": "https://iyca.org/post/resistance-band-training-keys-to-first-step-speed",
+      "note": "弱い抵抗から始める原則と、側方・回旋・前方の第一歩ドリルの動画を参照する。"
+    },
+    {
+      "id": "peak-physio-step-down",
+      "title": "Step Down",
+      "organization": "Peak Physio",
+      "kind": "video-page",
+      "url": "https://www.peak-physio.com.au/exercise/step-down/",
+      "note": "台上の支持脚でゆっくり下降し、膝と第2趾、骨盤を揃える実演を参照する。"
+    },
+    {
+      "id": "human20-cossack-squat",
+      "title": "Cossack Squat Tutorial",
+      "organization": "Human 2.0",
+      "kind": "video-page",
+      "url": "https://yourfitnessnews.com/cossack-squat-tutorial-bodyweight-squat-lower-body-strength-mobility-exercise-human-2-0/",
+      "note": "ワイドスタンス、胸を起こす姿勢と段階的なコサックスクワットを参照する。"
+    },
+    {
+      "id": "squat-university-pistol",
+      "title": "How to Get Your First Pistol Squat (Step-by-Step Progression)",
+      "organization": "Squat University",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=vq5-vdgJc0I",
+      "note": "低い台のタッチダウンからフルピストルへ進む段階、重心と膝の制御を参照する。"
+    },
+    {
+      "id": "iom-trap-bar-jump-shrug",
+      "title": "LLT Trap Bar Jump Shrug Exercise",
+      "organization": "Institute of Motion",
+      "kind": "video-page",
+      "url": "https://platform.instituteofmotion.com/library/activity/uffc281r/",
+      "note": "低重量で離地するトラップバー・ジャンプシュラッグの実演と負荷選択を参照する。"
+    },
+    {
+      "id": "nsca-front-squat-video",
+      "title": "Exercise Technique: Front Squat",
+      "organization": "National Strength and Conditioning Association",
+      "kind": "video-page",
+      "url": "https://www.nsca.com/education/videos/exercise-technique-front-squat/",
+      "note": "フロントスクワットのセットアップと実演を参照する。"
+    },
+    {
+      "id": "crossfit-front-squat",
+      "title": "The Front Squat",
+      "organization": "CrossFit",
+      "kind": "video-page",
+      "url": "https://www.crossfit.com/essentials/the-front-squat",
+      "note": "フロントラック、下降、立ち上がり、よくある失敗と易化方法を参照する。"
+    },
+    {
+      "id": "crossfit-shoulder-press",
+      "title": "The Shoulder Press",
+      "organization": "CrossFit",
+      "kind": "video-page",
+      "url": "https://www.crossfit.com/essentials/the-shoulder-press",
+      "note": "立位のセットアップ、直線的なバーパス、頭上の終了姿勢を参照する。"
+    },
+    {
+      "id": "nasm-pull-up",
+      "title": "Pull-Up",
+      "organization": "National Academy of Sports Medicine (NASM)",
+      "kind": "video-page",
+      "url": "https://www.nasm.org/resource-center/exercise-library/pull-up",
+      "note": "ぶら下がり、肩甲骨の準備、引き上げ、制御した下降、補助バリエーションを参照する。"
+    },
+    {
+      "id": "e3-9090-hip-rotations",
+      "title": "90/90 Hip Rotations w/ Hand Support (Demo)",
+      "organization": "E3 Rehab",
+      "kind": "video",
+      "url": "https://vimeo.com/662379053",
+      "note": "手で支持した90/90ヒップローテーションの実演を参照する。"
+    },
+    {
+      "id": "squat-university-deep-squat-rotation",
+      "title": "The Deep Squat Rotation (Mobility Exercise)",
+      "organization": "Squat University",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=enThal66tUs",
+      "note": "深いスクワットを保った胸椎回旋と頭上リーチを参照する。"
+    },
+    {
+      "id": "e3-copenhagen-plank",
+      "title": "How to Perform & Program the Copenhagen Plank",
+      "organization": "E3 Rehab",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=kD1t1hWzIDE",
+      "note": "0:20〜のセットアップと実施、3:50〜の回帰方法を参照する。"
+    },
+    {
+      "id": "e3-shoulder-rom",
+      "title": "How to Improve Your Shoulder Range of Motion",
+      "organization": "E3 Rehab",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=b7yQwf-K7z0",
+      "note": "1:57〜の自己評価、9:01〜の内旋、11:53〜の注意事項を参照する。"
+    },
+    {
+      "id": "performanceplus-jband-er",
+      "title": "J Bands Shoulder External Rotation Exercises",
+      "organization": "Performance Plus Healthcare",
+      "kind": "video-page",
+      "url": "https://performanceplushealthcare.com.au/shoulder-external-rotation-exercises/",
+      "note": "肩・肘90度で行うチューブ外旋と、投球減速局面との関係を参照する。"
+    },
+    {
+      "id": "nismat-arm-care",
+      "title": "NISMAT Arm Care Program",
+      "organization": "Nicholas Institute of Sports Medicine and Athletic Trauma",
+      "kind": "video-page",
+      "url": "https://nismat.org/patient-care/patient-education/injury-prevention/exercise-programs/nismat-arm-care-program/",
+      "note": "チューブを用いた肩90/90内旋など、頭上投球選手向けアームケア実演を参照する。"
+    },
+    {
+      "id": "rip-it-tennis-jump-rope",
+      "title": "The Ultimate Tennis Workout Program! (Jump Rope)",
+      "organization": "Rip It Tennis",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=a5v2gXDd6l8",
+      "note": "テニス向けの縄跳びによるフットワーク、持久力、速度の構成を参照する。"
+    },
+    {
+      "id": "sportplan-medball-turns",
+      "title": "Turns with Medicine Ball",
+      "organization": "Sportplan Tennis",
+      "kind": "video-page",
+      "url": "https://www.sportplan.net/drills/Tennis/Forehand-Drills/Turns-with-medicine-ball-mp4-tomtennis5.jsp",
+      "note": "メディシンボールを使ったテニス向け回旋動作の実演を参照する。"
+    },
+    {
+      "id": "tennis-side-forces",
+      "title": "Side Forces: Lateral Movement Drills",
+      "organization": "Tennis.com",
+      "kind": "video-page",
+      "url": "https://www.tennis.com/news/articles/side-forces-lateral-movement-drills",
+      "note": "抵抗下のレディー姿勢、膝・股関節・足関節を伸ばす側方移動を参照する。"
+    },
+    {
+      "id": "tenfitmen-hardcourt-slide",
+      "title": "How To Slide On Hard Court",
+      "organization": "TENFITMEN tennis impulse",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=8jJmHpqsnaU",
+      "note": "ハードコートスライドの準備、段階、リアルタイムとスロー実演を参照する。上級技術として安全上の注意を優先する。"
+    },
+    {
+      "id": "tenniscompanion-ladder-drills",
+      "title": "5 Easy Ladder Footwork Drills for Tennis, Agility & Speed",
+      "organization": "TennisCompanion",
+      "kind": "video-page",
+      "url": "https://tenniscompanion.org/easy-ladder-footwork-drills-for-tennis/",
+      "note": "0:40〜2:27のOne Step、Fast Feet、Side Step、Side Hop、Crossoverの実演と手順を参照する。"
+    },
+    {
+      "id": "sportplan-ladder-high-knees",
+      "title": "Ladder High Knees",
+      "organization": "Sportplan Tennis",
+      "kind": "video-page",
+      "url": "https://www.sportplan.net/drills/Tennis/Agility-Fitness/Ladder-High-Knees-TTRH0015.jsp",
+      "note": "各マスで交互に膝を上げるハイニーの実演を参照する。"
+    },
+    {
+      "id": "top-tennis-figure-eight",
+      "title": "Tennis Footwork - 5 Drills To Improve Your Footwork",
+      "organization": "Top Tennis Training",
+      "kind": "video-page",
+      "url": "https://www.top-tennis-training.com/tennis-footwork-5-drills-to-improve-your-footwork/",
+      "note": "Drill 1のコーン2個を約5歩離したフィギュアエイト、調整歩、方向転換を参照する。"
     }
   ]
 }

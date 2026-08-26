@@ -4,9 +4,9 @@ import { emptyFilters, filterDrills } from './filter-drills'
 
 describe('filterDrills', () => {
   it('loads the complete catalog', () => {
-    expect(drills).toHaveLength(111)
+    expect(drills).toHaveLength(137)
     expect(drills).toHaveLength(catalogIndex.totalDrills)
-    expect(new Set(drills.map((drill) => drill.id)).size).toBe(111)
+    expect(new Set(drills.map((drill) => drill.id)).size).toBe(137)
     catalogIndex.files.forEach((category) => {
       const categoryDrills = drills.filter((drill) => drill.category[0] === category.label)
       expect(categoryDrills).toHaveLength(category.count)
@@ -58,6 +58,15 @@ describe('filterDrills', () => {
     expect(sourceById.get('sokeibu-hip-video')?.url).toBe(
       'https://www.youtube.com/watch?v=UMtLD3Rod4g',
     )
+  })
+
+  it('loads the tennis physique video drills and merged aliases', () => {
+    expect(sourceById.get('blue-guy-tennis-physique')?.url).toBe(
+      'https://www.youtube.com/watch?v=wOfW3kZy_lo',
+    )
+    expect(filterDrills(drills, { ...emptyFilters, query: 'ランドマイン' }).map((drill) => drill.id)).toContain('phy-power-06')
+    expect(filterDrills(drills, { ...emptyFilters, query: 'ブルガリアンスプリットスクワット' }).map((drill) => drill.id)).toContain('phy-strength-02')
+    expect(filterDrills(drills, { ...emptyFilters, query: '色・番号コール' }).map((drill) => drill.id)).toContain('move-01')
   })
 
   it('searches names, summaries, tags, and cues with NFKC normalization', () => {

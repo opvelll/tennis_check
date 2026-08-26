@@ -20,7 +20,7 @@
     "environments": ["gym"], "equipment": ["box"], "intensity": "high", "durationMinutes": {"min": 5, "max": 10},
     "tags": ["RFD", "ボックスジャンプ", "着地", "下半身"],
     "cues": ["足裏全体を台へ収める", "着地音を小さくする", "背筋を立てて姿勢を止める"],
-    "media": ["itf-fitness", "nsca-plyometrics"], "sources": ["itf-fitness", "nsca-plyometrics"], "status": "researched",
+    "media": ["itf-fitness", "nsca-plyometrics", "blue-guy-tennis-physique"], "sources": ["itf-fitness", "nsca-plyometrics", "blue-guy-tennis-physique"], "status": "researched",
     "safetyNotes": ["高さより着地品質を優先し、台からは跳び降りずステップで降りる。"]
   },
   {
@@ -74,13 +74,15 @@
   {
     "id": "phy-rfd-07",
     "name": "スケーターバウンド＆スティック",
+    "aliases": ["シングルレッグ・バウンド"],
     "category": ["フィジカル", "RFD・プライオメトリクス", "側方片脚"],
     "summary": "片脚から反対脚へ横跳びし、着地を保持して側方パワーと制動を作る。",
     "disciplines": ["both"], "formats": ["トレーニング"], "playerCount": {"min": 1},
     "environments": ["gym", "court"], "equipment": ["markers-optional"], "intensity": "high", "durationMinutes": {"min": 5, "max": 10},
     "tags": ["側方", "片脚", "減速", "バランス"],
     "cues": ["股関節へ着地する", "遊脚と腕で釣り合いを取る", "2秒静止できる距離から始める"],
-    "media": ["nsca-plyometrics"], "sources": ["nsca-plyometrics", "itf-fitness"], "status": "derived",
+    "progressions": ["安定着地を保てたら、静止時間を短くして片脚バウンドを連続させる。"],
+    "media": ["nsca-plyometrics", "blue-guy-tennis-physique"], "sources": ["nsca-plyometrics", "itf-fitness", "blue-guy-tennis-physique"], "status": "derived",
     "safetyNotes": ["距離を伸ばす前に左右とも安定着地を確認する。"]
   },
   {
@@ -105,7 +107,7 @@
     "environments": ["gym", "court"], "equipment": ["medicine-ball", "wall-optional"], "intensity": "high", "durationMinutes": {"min": 6, "max": 12},
     "tags": ["メディシンボール", "フォアハンド", "回旋", "パワー"],
     "cues": ["後脚から地面を押す", "骨盤と胸郭を連動させる", "腕だけで投げない"],
-    "media": ["usta-fitness-tests", "nsca-tennis-core"], "sources": ["usta-fitness-tests", "nsca-tennis-core"], "status": "researched",
+    "media": ["usta-fitness-tests", "nsca-tennis-core", "blue-guy-tennis-physique"], "sources": ["usta-fitness-tests", "nsca-tennis-core", "blue-guy-tennis-physique"], "status": "researched",
     "safetyNotes": ["壁の強度、跳ね返り、人との距離を確認する。"]
   },
   {
@@ -117,7 +119,7 @@
     "environments": ["gym", "court"], "equipment": ["medicine-ball", "wall-optional"], "intensity": "high", "durationMinutes": {"min": 6, "max": 12},
     "tags": ["メディシンボール", "バックハンド", "回旋", "パワー"],
     "cues": ["両足で床を捉える", "投げ終わりまで体幹を連動させる", "左右条件を同じにする"],
-    "media": ["usta-fitness-tests", "nsca-tennis-core"], "sources": ["usta-fitness-tests", "nsca-tennis-core"], "status": "researched",
+    "media": ["usta-fitness-tests", "nsca-tennis-core", "blue-guy-tennis-physique"], "sources": ["usta-fitness-tests", "nsca-tennis-core", "blue-guy-tennis-physique"], "status": "researched",
     "safetyNotes": ["制御できる重さを使い、腰を反らして投げない。"]
   },
   {
@@ -182,25 +184,28 @@
   {
     "id": "phy-strength-02",
     "name": "リアフット・エレベーテッド・スプリットスクワット",
+    "aliases": ["ブルガリアンスプリットスクワット", "スプリットスクワット"],
     "category": ["フィジカル", "筋力", "片脚"],
     "summary": "後脚を台に置き、前脚中心で股関節・膝の片脚筋力を高める。",
     "disciplines": ["both"], "formats": ["トレーニング"], "playerCount": {"min": 1},
     "environments": ["gym", "home"], "equipment": ["bench", "bodyweight-or-weight"], "intensity": "medium", "durationMinutes": {"min": 8, "max": 20},
     "tags": ["筋力", "片脚", "スプリットスクワット", "股関節"],
     "cues": ["前足全体で床を押す", "骨盤を正面へ保つ", "前膝を内側へ入れない"],
-    "media": ["usta-circuit"], "sources": ["usta-circuit"], "status": "derived",
+    "progressions": ["両脚の配置を保った静止姿勢で、スプリットスクワット・アイソメトリックホールドを行う。"],
+    "media": ["usta-circuit", "blue-guy-tennis-physique"], "sources": ["usta-circuit", "blue-guy-tennis-physique"], "status": "derived",
     "safetyNotes": ["まず通常のスプリットスクワットで安定性を確認する。"]
   },
   {
     "id": "phy-strength-03",
     "name": "ルーマニアンデッドリフト・ヒップヒンジ",
+    "aliases": ["RDL", "ルーマニアンデッドリフト"],
     "category": ["フィジカル", "筋力", "後面"],
     "summary": "股関節を後方へ引くヒンジで、ハムストリングスと臀部を強化する。",
     "disciplines": ["both"], "formats": ["トレーニング"], "playerCount": {"min": 1},
     "environments": ["gym", "home"], "equipment": ["dumbbells-or-barbell"], "intensity": "medium", "durationMinutes": {"min": 8, "max": 20},
     "tags": ["筋力", "ヒップヒンジ", "ハムストリング", "臀部"],
     "cues": ["背中ではなく股関節を曲げる", "重りを脚の近くへ通す", "足裏全体で立ち上がる"],
-    "media": ["usta-circuit"], "sources": ["usta-circuit"], "status": "derived",
+    "media": ["usta-circuit", "blue-guy-tennis-physique"], "sources": ["usta-circuit", "blue-guy-tennis-physique"], "status": "derived",
     "safetyNotes": ["腰に痛みが出る範囲や負荷では行わない。"]
   },
   {
@@ -299,5 +304,1949 @@
     "cues": ["実戦で多い打球パターンを使う", "休息中は軽く動く", "球質が崩れたら反復を止める"],
     "media": ["itf-endurance"], "sources": ["itf-endurance"], "status": "researched",
     "safetyNotes": ["同日に他の高強度下肢トレーニングを重ねすぎない。"]
-  }
+  },
+  {
+  "id": "phy-rfd-09",
+  "name": "ジャンプスクワット→スプリットステップ",
+  "aliases": [
+    "ジャンプスクワット"
+  ],
+  "category": [
+    "フィジカル",
+    "RFD・プライオメトリクス",
+    "構え直し"
+  ],
+  "summary": "ジャンプスクワットから柔らかく着地し、すぐにスプリットステップの準備姿勢へ移る。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング",
+    "フットワーク"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "court"
+  ],
+  "equipment": [],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "tags": [
+    "ジャンプスクワット",
+    "スプリットステップ",
+    "着地",
+    "RFD"
+  ],
+  "cues": [
+    "着地音を小さくする",
+    "着地後は深くしゃがみ込まず、次へ動ける高さへ戻る",
+    "膝とつま先の向きを揃える"
+  ],
+  "media": [
+    "nasm-squat-jump-video",
+    "top-tennis-split-step",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "nasm-squat-jump-video",
+    "top-tennis-split-step",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "derived",
+  "safetyNotes": [
+    "疲労で着地姿勢が崩れる前に終了する。"
+  ],
+  "purposes": [
+    "両脚で力を出した直後に、次方向へ反応できる準備姿勢へ戻る。"
+  ],
+  "setup": [
+    "滑らない平面で、両足を肩幅程度にして立つ。",
+    "周囲に着地と第一歩のための空間を確保する。"
+  ],
+  "steps": [
+    "腹部と臀部を締め、腕を使いながらスクワットジャンプを行う。",
+    "足裏で柔らかく着地し、すぐに小さく跳ねて足幅を広げる。",
+    "左右どちらへも押し出せるスプリットステップ姿勢で静止する。"
+  ],
+  "successCriteria": [
+    "柔らかな着地から、余分な足踏みなしでスプリット姿勢へ移れる。",
+    "左右どちらの合図にも最初の一歩を出せる。"
+  ],
+  "commonErrors": [
+    "着地で膝が内側へ入る。",
+    "ジャンプを高くしすぎ、構え直しが遅れる。",
+    "スプリットステップ後に重心が片側へ残る。"
+  ],
+  "progressions": [
+    "スプリット着地の直後に、ランダムな左右合図へ第一歩を出す。"
+  ],
+  "regressions": [
+    "ジャンプを外し、カーフレイズからスプリット姿勢へ移る。",
+    "スクワットジャンプとスプリットステップを別々に練習する。"
+  ]
+},
+  {
+  "id": "phy-power-05",
+  "name": "ケーブル・ウッドチョップ",
+  "category": [
+    "フィジカル",
+    "パワー",
+    "回旋"
+  ],
+  "summary": "ケーブル抵抗を斜め方向へ動かし、脚から体幹へ伝える回旋トレーニングとして行う。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym"
+  ],
+  "equipment": [
+    "cable-machine"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "ケーブル",
+    "体幹",
+    "回旋",
+    "運動連鎖"
+  ],
+  "cues": [
+    "腕だけで引かず、足・骨盤・胸郭を一緒に向ける",
+    "腰だけをねじらない",
+    "戻りもケーブルに引かせない"
+  ],
+  "media": [
+    "turnfit-cable-woodchop",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "turnfit-cable-woodchop",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "姿勢を保てる抵抗から始め、腰や肩に痛みが出たら中止する。"
+  ],
+  "purposes": [
+    "股関節・体幹・上肢を斜め方向へ協調させる。"
+  ],
+  "setup": [
+    "ケーブルを肩より高い位置に設定し、マシンへ横向きに立つ。",
+    "両手でハンドルを持ち、ケーブルが張る位置まで離れて足を安定させる。"
+  ],
+  "steps": [
+    "膝を軽く曲げ、ハンドルをケーブル側の肩付近に構える。",
+    "足を必要に応じて回しながら、骨盤と胸郭を連動させて反対側の腿外側へ斜めに引く。",
+    "同じ軌道を制御して開始位置へ戻し、片側を終えてから反対側を行う。"
+  ],
+  "successCriteria": [
+    "左右または各反復で同じ姿勢と動作範囲を再現できる。",
+    "痛みなく、最後の反復まで開始姿勢と終了姿勢を制御できる。"
+  ],
+  "commonErrors": [
+    "足を固定したまま膝や腰だけをねじる。",
+    "肘を曲げて腕だけで引く。",
+    "勢いが強く、戻りを制御できない。"
+  ],
+  "progressions": [
+    "低速で制御できたら、姿勢が崩れない軽い負荷で引く速度を上げる。"
+  ],
+  "regressions": [
+    "軽いチューブに替える。",
+    "可動域を小さくして骨盤と胸郭が一緒に動く範囲を確認する。"
+  ]
+},
+  {
+  "id": "phy-power-06",
+  "name": "ランドマイン・ローテーション",
+  "category": [
+    "フィジカル",
+    "パワー",
+    "回旋"
+  ],
+  "summary": "固定したバーベルを左右へ動かし、下肢と体幹の回旋をつなぐ。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym"
+  ],
+  "equipment": [
+    "barbell",
+    "landmine-anchor"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "ランドマイン",
+    "体幹",
+    "回旋",
+    "運動連鎖"
+  ],
+  "cues": [
+    "腕だけで半円を描かない",
+    "足・骨盤・胸郭を連動させる",
+    "端で重りに振り回されない"
+  ],
+  "media": [
+    "dvids-landmine-rotation",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "dvids-landmine-rotation",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "バーベルの固定と周囲の空間を確認し、制御できる負荷を使う。"
+  ],
+  "purposes": [
+    "バーベルの弧を脚と体幹で制御し、左右への力の受け渡しを練習する。"
+  ],
+  "setup": [
+    "ランドマイン支点へバーベルを確実に固定する。",
+    "プレート側を胸の前で両手保持し、足を肩幅程度に置く。"
+  ],
+  "steps": [
+    "胸前の中央位置から開始する。",
+    "片側の腰方向へバーを下ろし、足と股関節の向きを変えながら弧を描いて反対側へ運ぶ。",
+    "端で止められる速度を保ち、左右を交互に繰り返す。"
+  ],
+  "successCriteria": [
+    "左右の端でバーを静かに止め、同じ弧で戻せる。",
+    "腰の反りや膝のねじれなく反復できる。"
+  ],
+  "commonErrors": [
+    "重すぎて端で止められない。",
+    "足を固定し、腰部だけを回旋する。",
+    "バーの固定やカラーを確認しない。"
+  ],
+  "progressions": [
+    "制御を保ったまま移動速度を上げる。",
+    "立位を保てたらスプリットスタンスを試す。"
+  ],
+  "regressions": [
+    "プレートを外すか軽くする。",
+    "狭い弧でゆっくり左右へ移動する。"
+  ]
+},
+  {
+  "id": "phy-power-07",
+  "name": "スロー回旋シャドースイング",
+  "category": [
+    "フィジカル",
+    "パワー",
+    "タイミング"
+  ],
+  "summary": "シャドースイングをゆっくり行い、脚・腰・体幹・腕へ力を渡す順序を確認する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "シャドー",
+    "身体操作"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "court",
+    "gym",
+    "home"
+  ],
+  "equipment": [
+    "racket-optional"
+  ],
+  "intensity": "low",
+  "durationMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "tags": [
+    "シャドースイング",
+    "回旋",
+    "運動連鎖",
+    "タイミング"
+  ],
+  "cues": [
+    "速度より順序を優先する",
+    "腕が骨盤より先に走らない",
+    "終了姿勢を一度止める"
+  ],
+  "media": [
+    "carlbo-tennis-shadow",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "carlbo-tennis-shadow",
+    "nsca-tennis-core",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "derived",
+  "safetyNotes": [
+    "周囲にラケットを振れる空間を確保する。"
+  ],
+  "purposes": [
+    "スイングの準備・荷重・回旋・フォロースルーの順序を低速で確認する。"
+  ],
+  "setup": [
+    "ラケットを振れる空間を確保し、鏡または撮影端末を任意で用意する。",
+    "通常のレディーポジションから始める。"
+  ],
+  "steps": [
+    "ユニットターンして軸脚側へ荷重する。",
+    "足で床を押し、骨盤、胸郭、腕の順にゆっくりスイングする。",
+    "フォロースルーまでバランスを保ち、レディーポジションへ戻る。",
+    "フォアとバックを左右同数行う。"
+  ],
+  "successCriteria": [
+    "低速でも途中で止まらず、全身の順序を保って振れる。",
+    "撮影で開始・打点想定・終了の姿勢を左右から確認できる。"
+  ],
+  "commonErrors": [
+    "腕だけを先に振る。",
+    "ゆっくり動くために体幹を固め、回旋が消える。",
+    "フォロースルー後にバランスを失う。"
+  ],
+  "progressions": [
+    "低速・中速・通常速度の3段階を連続して行う。",
+    "最後に軽いボール出しへつなげる。"
+  ],
+  "regressions": [
+    "ラケットを持たず、ユニットターンと荷重移動だけを行う。"
+  ]
+},
+  {
+  "id": "phy-power-08",
+  "name": "チューブ抵抗フォアハンド回旋",
+  "category": [
+    "フィジカル",
+    "パワー",
+    "フォアハンド"
+  ],
+  "summary": "チューブ抵抗に抗してフォアハンド方向へ回旋し、力をリリースする局面を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "チューブトレーニング",
+    "シャドー"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "court",
+    "gym",
+    "home"
+  ],
+  "equipment": [
+    "resistance-band",
+    "anchor"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 10
+  },
+  "tags": [
+    "チューブ",
+    "フォアハンド",
+    "回旋",
+    "タイミング"
+  ],
+  "cues": [
+    "チューブを腕で引っ張らない",
+    "軸脚への荷重を先に作る",
+    "戻りを急がない"
+  ],
+  "media": [
+    "powercore-forehand-resisted",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "powercore-forehand-resisted",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "チューブと支点の損傷を確認し、顔へ跳ね返る方向に立たない。"
+  ],
+  "purposes": [
+    "チューブの抵抗を手掛かりに、フォアハンドの軸脚荷重から回旋までをつなぐ。"
+  ],
+  "setup": [
+    "損傷のないチューブを外れない支点へ固定する。",
+    "抵抗がスイング方向と反対に働く位置で、フォアハンドの構えを取る。"
+  ],
+  "steps": [
+    "軸脚側の股関節へ荷重して準備する。",
+    "足で床を押し、骨盤と胸郭を先行させてフォアハンド方向へ回旋する。",
+    "抵抗に引かれず終了姿勢を止め、ゆっくり開始位置へ戻る。"
+  ],
+  "successCriteria": [
+    "抵抗下でも足・骨盤・胸郭・腕の順序を保てる。",
+    "支点側へ身体を引かれず、終了姿勢を静止できる。"
+  ],
+  "commonErrors": [
+    "強すぎる抵抗で腕だけを振る。",
+    "チューブの延長線上に顔を置く。",
+    "戻りで支点へ引き込まれる。"
+  ],
+  "progressions": [
+    "チューブ後に軽いメディシンボール動作、次に通常のシャドースイングへつなぐ。"
+  ],
+  "regressions": [
+    "抵抗を弱くする。",
+    "ラケットを持たず股関節の荷重と回旋だけを行う。"
+  ]
+},
+  {
+  "id": "phy-strength-10",
+  "name": "ラテラルランジ",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "側方"
+  ],
+  "summary": "横へ踏み込み、方向転換前に必要な側方の支持と力の吸収を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "court",
+    "home"
+  ],
+  "equipment": [
+    "bodyweight-or-weight"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "ラテラルランジ",
+    "側方",
+    "方向転換",
+    "下半身"
+  ],
+  "cues": [
+    "踏み出し脚の足裏全体を接地する",
+    "膝とつま先を同じ向きにする",
+    "股関節を後方へ引く"
+  ],
+  "media": [
+    "nasm-lateral-lunge",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "nasm-lateral-lunge",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "股関節や膝に痛みが出ない踏み幅と深さで行う。"
+  ],
+  "purposes": [
+    "側方への踏み込みを片脚で受け、同じ脚で開始位置へ戻る力を作る。"
+  ],
+  "setup": [
+    "足を腰幅にして立ち、左右へ一歩分の空間を確保する。"
+  ],
+  "steps": [
+    "片脚を横へ踏み出し、両足のつま先を正面へ向ける。",
+    "踏み出した側の膝を曲げ、股関節を後方へ引きながら反対脚を伸ばす。",
+    "踏み出した足で床を押して中央へ戻り、反対側も行う。"
+  ],
+  "successCriteria": [
+    "左右または各反復で同じ姿勢と動作範囲を再現できる。",
+    "痛みなく、最後の反復まで開始姿勢と終了姿勢を制御できる。"
+  ],
+  "commonErrors": [
+    "つま先が外へ開きすぎる。",
+    "膝だけが前へ出て股関節を使えない。",
+    "戻りで反対脚へ体重を逃がす。"
+  ],
+  "progressions": [
+    "胸前にダンベルまたはケトルベルを持つ。",
+    "戻りを素早くして側方の押し出しへつなげる。"
+  ],
+  "regressions": [
+    "踏み幅と深さを小さくする。",
+    "固定したワイドスタンスで左右へ重心移動する。"
+  ]
+},
+  {
+  "id": "phy-strength-11",
+  "name": "スケータースクワット",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "片脚"
+  ],
+  "summary": "片脚支持でしゃがみ、方向転換に必要な片脚の支持力を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home",
+    "court"
+  ],
+  "equipment": [
+    "support-optional"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "スケータースクワット",
+    "片脚",
+    "方向転換",
+    "バランス"
+  ],
+  "cues": [
+    "胸を支持脚の上に保つ",
+    "支持膝を足の向きに沿わせる",
+    "浮かせた脚で床を押さない"
+  ],
+  "media": [
+    "strive-skater-squat",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "strive-skater-squat",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "支持物を使って深さを調整し、膝が不安定なら中止する。"
+  ],
+  "purposes": [
+    "片脚支持で股関節・膝・足関節を協調させる。"
+  ],
+  "setup": [
+    "片脚で立ち、反対脚を後方へ軽く浮かせる。",
+    "必要なら前方に支持物を置く。"
+  ],
+  "steps": [
+    "支持脚の股関節を後方へ引き、胸を軽く前へ傾ける。",
+    "浮かせた脚の膝を床へ近づけながら、支持脚でゆっくり下降する。",
+    "足裏中央で床を押して立ち上がる。"
+  ],
+  "successCriteria": [
+    "左右または各反復で同じ姿勢と動作範囲を再現できる。",
+    "痛みなく、最後の反復まで開始姿勢と終了姿勢を制御できる。"
+  ],
+  "commonErrors": [
+    "支持膝が内側へ入る。",
+    "後ろ足が床へ着き、両脚で立ち上がる。",
+    "深さを優先して骨盤が傾く。"
+  ],
+  "progressions": [
+    "軽い重りを前に持って反復する。",
+    "支持物なしで深さを増やす。"
+  ],
+  "regressions": [
+    "支持物を持つ。",
+    "後ろ膝が触れる位置へパッドや高い台を置く。"
+  ]
+},
+  {
+  "id": "phy-rfd-10",
+  "name": "抵抗付きファーストステップ",
+  "aliases": [
+    "チューブプッシュ",
+    "ウォールドライブ・スタート"
+  ],
+  "category": [
+    "フィジカル",
+    "RFD・プライオメトリクス",
+    "第一歩"
+  ],
+  "summary": "チューブ抵抗または壁への支持を使い、第一歩で前方へ力を出す姿勢を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング",
+    "フットワーク"
+  ],
+  "playerCount": {
+    "min": 1,
+    "max": 2
+  },
+  "environments": [
+    "gym",
+    "court"
+  ],
+  "equipment": [
+    "resistance-band-optional",
+    "wall-optional"
+  ],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 4,
+    "max": 10
+  },
+  "tags": [
+    "第一歩",
+    "加速",
+    "チューブ",
+    "スタート"
+  ],
+  "cues": [
+    "腰から折れず身体全体を傾ける",
+    "足を前へ伸ばすより床を後ろへ押す",
+    "最初は弱い抵抗を使う"
+  ],
+  "media": [
+    "iyca-band-first-step",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "iyca-band-first-step",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "チューブの支点と進行方向の空間を確認する。"
+  ],
+  "purposes": [
+    "第一歩の方向へ身体を傾け、足・膝・股関節を伸ばして加速する。"
+  ],
+  "setup": [
+    "チューブ使用時は腰へ巻き、パートナーまたは支点が後方から保持する。",
+    "壁ドリルでは両手を壁へつき、頭から支持脚までを一直線に傾ける。"
+  ],
+  "steps": [
+    "傾いた姿勢で片膝を前へ引き上げる。",
+    "支持脚で床を後方へ押し、短く強い第一歩を出す。",
+    "数歩で減速し、歩いて開始位置へ戻る。",
+    "左右の開始脚を替える。"
+  ],
+  "successCriteria": [
+    "抵抗があっても上体だけが先行せず、最初の一歩で前進できる。",
+    "左右とも同じ傾きと接地位置を再現できる。"
+  ],
+  "commonErrors": [
+    "強すぎる抵抗で走姿勢が起きる。",
+    "足を身体より遠く前へ着く。",
+    "保持者が不安定でチューブの張力が急変する。"
+  ],
+  "progressions": [
+    "合図に反応して左右または前方へスタートする。",
+    "加速と減速を連続する反復フローへ進む。"
+  ],
+  "regressions": [
+    "壁支持で一歩ずつ行う。",
+    "チューブを外して前傾から2〜3歩だけ加速する。"
+  ]
+},
+  {
+  "id": "phy-strength-12",
+  "name": "ボックス・ステップダウン",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "エキセントリック"
+  ],
+  "summary": "台上の片脚で下降を制御し、片脚で減速する力を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home"
+  ],
+  "equipment": [
+    "box-or-step"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "エキセントリック",
+    "片脚",
+    "減速",
+    "ステップダウン"
+  ],
+  "cues": [
+    "支持膝を第2趾の向きに保つ",
+    "骨盤を傾けない",
+    "床側の足は軽く触れるだけ"
+  ],
+  "media": [
+    "peak-physio-step-down",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "peak-physio-step-down",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "低い台から始め、膝や股関節に痛みが出たら中止する。"
+  ],
+  "purposes": [
+    "台上の支持脚で下降と再上昇を制御する。"
+  ],
+  "setup": [
+    "低く安定した台へ両足で乗り、片足を台の端へ置く。",
+    "必要なら壁や棒を軽く支持に使う。"
+  ],
+  "steps": [
+    "支持脚の股関節と膝を曲げ、反対脚の踵を床へ近づける。",
+    "骨盤を水平に保ち、踵を軽く床へ触れる。",
+    "床側の脚では押さず、台上の足で立ち上がる。"
+  ],
+  "successCriteria": [
+    "一定速度で下降し、反対脚で蹴らずに戻れる。",
+    "左右で骨盤と膝の軌道が大きく変わらない。"
+  ],
+  "commonErrors": [
+    "床側の足で強く蹴る。",
+    "支持膝が内側へ入る。",
+    "台が高すぎて骨盤が落ちる。"
+  ],
+  "progressions": [
+    "台を少し高くする。",
+    "軽い重りを持つか、下降時間を長くする。"
+  ],
+  "regressions": [
+    "台を低くする。",
+    "支持物を使い、踵が床へ届く前に戻る。"
+  ]
+},
+  {
+  "id": "phy-strength-13",
+  "name": "コサックスクワット",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "ワイドベース"
+  ],
+  "summary": "広い足幅で片側へ重心を移し、ワイドベースでの制御を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング",
+    "モビリティ"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home",
+    "court"
+  ],
+  "equipment": [
+    "support-optional"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "コサックスクワット",
+    "ワイドベース",
+    "股関節",
+    "エキセントリック"
+  ],
+  "cues": [
+    "胸を起こし体幹を締める",
+    "作業側の膝とつま先を揃える",
+    "痛みや骨盤の巻き込み前で止める"
+  ],
+  "media": [
+    "human20-cossack-squat",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "human20-cossack-squat",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "股関節・膝・足首に痛みや詰まりが出ない範囲で行う。"
+  ],
+  "purposes": [
+    "広い支持幅で股関節・膝・足関節を片側ずつ制御する。"
+  ],
+  "setup": [
+    "足を肩幅より広く開き、つま先をやや外へ向ける。",
+    "必要なら前方の支持物を用意する。"
+  ],
+  "steps": [
+    "片側へ体重を移し、その膝を曲げながら股関節を後方へ引く。",
+    "反対脚を伸ばし、作業側の踵を床へ保てる深さまで下降する。",
+    "作業側の足で床を押して中央へ戻り、反対側へ移る。"
+  ],
+  "successCriteria": [
+    "左右または各反復で同じ姿勢と動作範囲を再現できる。",
+    "痛みなく、最後の反復まで開始姿勢と終了姿勢を制御できる。"
+  ],
+  "commonErrors": [
+    "深さを急いで踵が浮く。",
+    "膝が内側へ入る。",
+    "上体が丸まり骨盤が後傾する。"
+  ],
+  "progressions": [
+    "胸前に軽い重りを持つ。",
+    "左右の切り替えを滑らかに連続する。"
+  ],
+  "regressions": [
+    "支持物を持つ。",
+    "深さを浅くし、ワイドスタンスの重心移動に戻す。"
+  ]
+},
+  {
+  "id": "phy-strength-14",
+  "name": "ピストルスクワット",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "片脚"
+  ],
+  "summary": "片脚で深くしゃがみ、ワイドボールへ入る際の片脚支持と制御を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home"
+  ],
+  "equipment": [
+    "support-optional"
+  ],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "ピストルスクワット",
+    "片脚",
+    "ワイドベース",
+    "エキセントリック"
+  ],
+  "cues": [
+    "深さよりバランスを優先する",
+    "膝を足の向きに沿わせる",
+    "足裏中央から重心を外さない"
+  ],
+  "media": [
+    "squat-university-pistol",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "squat-university-pistol",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "支持物や浅い可動域から始め、膝・股関節・足首に痛みが出たら中止する。"
+  ],
+  "purposes": [
+    "片脚で足裏中央へ重心を保ちながら、深いスクワットを制御する。"
+  ],
+  "setup": [
+    "まず低い台上のタッチダウン・スクワットで片脚制御を確認する。",
+    "必要なら柱やチューブを支持に使う。"
+  ],
+  "steps": [
+    "片脚で立ち、反対脚を前へ伸ばす。",
+    "股関節を後方へ引き、胸を前へ傾けて足裏中央へ重心を保つ。",
+    "膝を足の向きに沿わせ、制御できる深さまで下降する。",
+    "支持脚で床を押して立ち上がる。"
+  ],
+  "successCriteria": [
+    "反動や支持なしで、選んだ深さを往復できる。",
+    "膝痛や足首の詰まりなく左右を実施できる。"
+  ],
+  "commonErrors": [
+    "いきなり最深部まで下りる。",
+    "膝が内側へ入る。",
+    "踵が浮き、後方へ倒れる。"
+  ],
+  "progressions": [
+    "台の高さを段階的に上げ、最終的に床からのフルピストルへ進む。"
+  ],
+  "regressions": [
+    "4インチ程度の低い台でタッチダウン・スクワットを行う。",
+    "支持物を持つか、台へ座るボックスピストルにする。"
+  ]
+},
+  {
+  "id": "phy-rfd-11",
+  "name": "トラップバー・ジャンプシュラッグ",
+  "category": [
+    "フィジカル",
+    "RFD・プライオメトリクス",
+    "最大筋力"
+  ],
+  "summary": "トラップバーを使って床を爆発的に押す種目として、動画内で最大筋力の柱に挙げられる。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym"
+  ],
+  "equipment": [
+    "trap-bar",
+    "weights"
+  ],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 8,
+    "max": 20
+  },
+  "tags": [
+    "トラップバー",
+    "ジャンプシュラッグ",
+    "爆発力",
+    "下半身"
+  ],
+  "cues": [
+    "重さより離地速度を優先する",
+    "腕で引き上げない",
+    "着地を静かにする"
+  ],
+  "media": [
+    "iom-trap-bar-jump-shrug",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "iom-trap-bar-jump-shrug",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "重量と技術の設定は資格を持つ指導者の評価下で行う。"
+  ],
+  "purposes": [
+    "軽い外部負荷を保ったまま、股関節・膝・足関節を素早く伸ばす。"
+  ],
+  "setup": [
+    "トラップバー中央へ立ち、低い重量から始める。",
+    "バーの周囲と着地位置を空け、カラーを固定する。"
+  ],
+  "steps": [
+    "デッドリフトの開始姿勢からバーを床より持ち上げる。",
+    "浅く沈み、床を強く押して股関節・膝・足関節を伸ばし、肩をすくめながら跳ぶ。",
+    "バーを身体の近くに保ち、柔らかく着地して静止する。",
+    "毎回姿勢を整えてから次の反復へ入る。"
+  ],
+  "successCriteria": [
+    "バーの左右が傾かず、両足が同時に離地・着地する。",
+    "各反復で跳躍高と着地姿勢を保てる。"
+  ],
+  "commonErrors": [
+    "重すぎて床から離れない。",
+    "肘を曲げて腕で引く。",
+    "連続して行い着地が崩れる。"
+  ],
+  "progressions": [
+    "資格を持つ指導者の監督下で、速度を保てる範囲だけ負荷を上げる。"
+  ],
+  "regressions": [
+    "無負荷のジャンプスクワットへ戻す。",
+    "軽いトラップバーで素早いデッドリフトを行い、跳ばない。"
+  ]
+},
+  {
+  "id": "phy-strength-15",
+  "name": "フロントスクワット",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "両脚"
+  ],
+  "summary": "身体の前で負荷を保持し、上体を起こした姿勢で下肢と体幹を鍛える。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym"
+  ],
+  "equipment": [
+    "barbell-or-dumbbells"
+  ],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 8,
+    "max": 20
+  },
+  "tags": [
+    "フロントスクワット",
+    "筋力",
+    "姿勢",
+    "下半身"
+  ],
+  "cues": [
+    "バーは手ではなく肩で支える",
+    "肘を前方へ高く保つ",
+    "膝とつま先の向きを揃える"
+  ],
+  "media": [
+    "nsca-front-squat-video",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "nsca-front-squat-video",
+    "crossfit-front-squat",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "保持姿勢と負荷は指導者の確認を受け、痛みが出る場合は行わない。"
+  ],
+  "purposes": [
+    "前方保持の負荷に対して、上体と体幹を保ちながら下肢を鍛える。"
+  ],
+  "setup": [
+    "ラック上のバーを肩前部へ載せ、肘を前・上へ向ける。",
+    "足を肩幅程度、つま先を少し外へ向けて立つ。"
+  ],
+  "steps": [
+    "腹部を締めてラックから外し、足位置を揃える。",
+    "肘を高く保ち、膝をつま先方向へ曲げながらしゃがむ。",
+    "足裏で床を押し、胸と腰が同時に上がるように立つ。"
+  ],
+  "successCriteria": [
+    "バーが肩から転がらず、上体を保って往復できる。",
+    "踵が浮かず、膝が内側へ崩れない。"
+  ],
+  "commonErrors": [
+    "肘が落ち、背中が丸まる。",
+    "重量が足先へ移る。",
+    "可動域より重さを優先する。"
+  ],
+  "progressions": [
+    "空バーで安定後、指導者の監督下で段階的に負荷を上げる。"
+  ],
+  "regressions": [
+    "PVCまたは空バーを使う。",
+    "ダンベル／ケトルベルのフロントスクワットへ替える。"
+  ]
+},
+  {
+  "id": "phy-strength-16",
+  "name": "オーバーヘッドプレス",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "肩"
+  ],
+  "summary": "頭上へ負荷を押し上げ、肩周囲の筋力を高める種目として動画内で挙げられる。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym"
+  ],
+  "equipment": [
+    "barbell-or-dumbbells"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 6,
+    "max": 15
+  },
+  "tags": [
+    "オーバーヘッドプレス",
+    "肩",
+    "最大筋力",
+    "上半身"
+  ],
+  "cues": [
+    "脚で反動をつけない",
+    "腰を反らず肋骨を骨盤上に保つ",
+    "バーを足中央の真上で終える"
+  ],
+  "media": [
+    "crossfit-shoulder-press",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "crossfit-shoulder-press",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "肩痛がある場合は自己判断で行わず、専門家へ相談する。"
+  ],
+  "purposes": [
+    "下肢の反動を使わず、肩・上腕と体幹で負荷を頭上へ支持する。"
+  ],
+  "setup": [
+    "足を腰幅にし、バーを肩の上へ置いて手を肩幅より少し広くする。",
+    "肘をバーよりわずかに前へ置き、腹部・臀部・大腿を締める。"
+  ],
+  "steps": [
+    "顎を軽く引き、バーを顔の近くで真上へ押す。",
+    "バーが頭を越えたら身体をバーの下へ戻し、腕を伸ばして肩を能動的に押し上げる。",
+    "体幹を保ったまま同じ軌道で肩へ戻す。"
+  ],
+  "successCriteria": [
+    "バーが足中央の真上で止まり、腰を反らずに保持できる。",
+    "上下とも顔から離れない直線軌道を保てる。"
+  ],
+  "commonErrors": [
+    "膝や股関節で反動をつける。",
+    "腰を反ってバーを後方へ押す。",
+    "グリップが緩み手首が大きく反る。"
+  ],
+  "progressions": [
+    "空バーで軌道を再現後、姿勢を保てる範囲で負荷を上げる。"
+  ],
+  "regressions": [
+    "軽いダンベルを片腕ずつ使う。",
+    "肩上の可動域が不足する場合はランドマインプレスへ替える。"
+  ]
+},
+  {
+  "id": "phy-strength-17",
+  "name": "プルアップ・バリエーション",
+  "aliases": [
+    "懸垂"
+  ],
+  "category": [
+    "フィジカル",
+    "筋力",
+    "背部"
+  ],
+  "summary": "懸垂のバリエーションで背部を鍛え、スイング時の上半身を支える。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home"
+  ],
+  "equipment": [
+    "pull-up-bar"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 15
+  },
+  "tags": [
+    "プルアップ",
+    "懸垂",
+    "背部",
+    "上半身"
+  ],
+  "cues": [
+    "反動を使わない",
+    "腕だけでなく肘を下へ引く",
+    "下降を制御する"
+  ],
+  "media": [
+    "nasm-pull-up",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "nasm-pull-up",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "安定したバーを使い、肩や肘に痛みが出たら中止する。"
+  ],
+  "purposes": [
+    "肩甲骨と体幹を制御しながら、身体を垂直方向へ引く。"
+  ],
+  "setup": [
+    "安定したバーを肩幅より少し広く握り、腕を伸ばしてぶら下がる。",
+    "足が床や周囲へ当たらないことを確認する。"
+  ],
+  "steps": [
+    "体幹を締め、肩甲骨を下げて引く準備をする。",
+    "肘を下へ引き、顎がバーを越える位置まで身体を上げる。",
+    "揺れを抑えながら腕が伸びる位置までゆっくり下ろす。"
+  ],
+  "successCriteria": [
+    "体幹の揺れなく、開始から終了まで同じ可動域を使える。",
+    "下降局面を落下せずに制御できる。"
+  ],
+  "commonErrors": [
+    "キッピングや脚振りで上がる。",
+    "腕だけで引き、肩が耳へ近づく。",
+    "下降を途中で止めるか落下する。"
+  ],
+  "progressions": [
+    "自重反復を保てたら、負荷追加は少量ずつ行う。"
+  ],
+  "regressions": [
+    "チューブ補助またはアシストマシンを使う。",
+    "インバーテッドロウへ替える。"
+  ]
+},
+  {
+  "id": "phy-mobility-01",
+  "name": "90/90ヒップスイッチ",
+  "category": [
+    "フィジカル",
+    "モビリティ",
+    "股関節"
+  ],
+  "summary": "両脚を90度に曲げた座位で左右へ切り替え、股関節の可動域へ入る。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "モビリティ",
+    "セルフ"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home",
+    "court"
+  ],
+  "equipment": [
+    "mat-optional"
+  ],
+  "intensity": "low",
+  "durationMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "tags": [
+    "90/90",
+    "股関節",
+    "モビリティ",
+    "回旋"
+  ],
+  "cues": [
+    "手を使って可動域を調整する",
+    "膝を床へ押し付けない",
+    "反動で切り替えない"
+  ],
+  "media": [
+    "e3-9090-hip-rotations",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "e3-9090-hip-rotations",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "股関節や膝に鋭い痛みや詰まりが出たら中止する。"
+  ],
+  "purposes": [
+    "座位で股関節の内旋・外旋を左右へ切り替える。"
+  ],
+  "setup": [
+    "床へ座り、両膝と股関節をおよそ90度に曲げる。",
+    "最初は両手を身体の後ろへ置いて支持する。"
+  ],
+  "steps": [
+    "両足の位置を大きくずらさず、両膝を同じ方向へゆっくり倒す。",
+    "左右の坐骨へ体重を移し、反対側の90/90姿勢まで切り替える。",
+    "痛みのない範囲を往復する。"
+  ],
+  "successCriteria": [
+    "左右へ同じ速度で切り替え、終点で呼吸できる。",
+    "膝や股関節に鋭い痛みなく行える。"
+  ],
+  "commonErrors": [
+    "足を近づけすぎて股関節の回旋を避ける。",
+    "上体の勢いだけで膝を倒す。",
+    "痛い側を床へ押し込む。"
+  ],
+  "progressions": [
+    "手の支持を減らす。",
+    "各側で上体を前へ傾ける90/90ホールドを加える。"
+  ],
+  "regressions": [
+    "両手支持で小さい可動域を使う。",
+    "片側の90/90姿勢だけをクッションで支える。"
+  ]
+},
+  {
+  "id": "phy-mobility-02",
+  "name": "回旋付きディープスクワットホールド",
+  "category": [
+    "フィジカル",
+    "モビリティ",
+    "全身"
+  ],
+  "summary": "深いスクワット姿勢を保持しながら上体を回旋し、可動域へ入る。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "モビリティ",
+    "セルフ"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home",
+    "court"
+  ],
+  "equipment": [
+    "support-optional"
+  ],
+  "intensity": "low",
+  "durationMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "tags": [
+    "ディープスクワット",
+    "回旋",
+    "モビリティ",
+    "股関節"
+  ],
+  "cues": [
+    "腰ではなく胸郭から回る",
+    "膝をつま先方向へ保つ",
+    "踵が浮く前の深さを使う"
+  ],
+  "media": [
+    "squat-university-deep-squat-rotation",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "squat-university-deep-squat-rotation",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "支持物を使って深さを調整し、腰・膝・足首に痛みが出たら中止する。"
+  ],
+  "purposes": [
+    "深いスクワットを保ちながら胸椎回旋と頭上へのリーチを行う。"
+  ],
+  "setup": [
+    "足を肩幅程度に開き、必要なら前方のバーや柱を支持に使う。"
+  ],
+  "steps": [
+    "踵を接地し、胸を起こせる深さのスクワットへ入る。",
+    "片手を床または支持物へ置き、反対腕を天井へ伸ばしながら胸郭を回す。",
+    "中央へ戻り、反対側を行う。"
+  ],
+  "successCriteria": [
+    "スクワットの深さと骨盤位置を大きく変えず左右へ回旋できる。",
+    "呼吸を止めず、痛みのない範囲で腕を上げられる。"
+  ],
+  "commonErrors": [
+    "回旋で膝が内側へ入る。",
+    "腰を反って腕だけを上げる。",
+    "踵が浮く深さを無理に保つ。"
+  ],
+  "progressions": [
+    "支持なしで行う。",
+    "上げた腕を見ながら終点で短く呼吸する。"
+  ],
+  "regressions": [
+    "安定した柱を持つ。",
+    "スクワットを浅くするか、踵の下へ薄い補助を入れる。"
+  ]
+},
+  {
+  "id": "phy-strength-18",
+  "name": "コペンハーゲンプランク",
+  "category": [
+    "フィジカル",
+    "筋力",
+    "内転筋"
+  ],
+  "summary": "横向き支持で脚を台へ置き、可動域内での制御を支える内転筋と体幹を鍛える。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "トレーニング",
+    "アイソメトリック"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home"
+  ],
+  "equipment": [
+    "bench"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 4,
+    "max": 10
+  },
+  "tags": [
+    "コペンハーゲンプランク",
+    "内転筋",
+    "体幹",
+    "アイソメトリック"
+  ],
+  "cues": [
+    "肩をすくめない",
+    "骨盤を前後へ回さない",
+    "上脚の内側でベンチを押す"
+  ],
+  "media": [
+    "e3-copenhagen-plank",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "e3-copenhagen-plank",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "鼠径部に痛みが出る場合は中止し、短いレバーまたは低い支持へ戻す。"
+  ],
+  "purposes": [
+    "内転筋と側方体幹を同時に支持する。"
+  ],
+  "setup": [
+    "横向きになり、上側の前腕または足首をベンチへ置く。",
+    "下側の肘を肩の真下へ置く。"
+  ],
+  "steps": [
+    "前腕で床を押し、上側の脚でベンチを押して骨盤を持ち上げる。",
+    "頭・体幹・脚を一直線にし、下側の脚を床から浮かせる。",
+    "呼吸を保って静止し、制御して下ろして反対側を行う。"
+  ],
+  "successCriteria": [
+    "骨盤が落ちず、呼吸を続けて選んだ時間を保持できる。",
+    "左右とも鼠径部に痛みなく行える。"
+  ],
+  "commonErrors": [
+    "支持肩が潰れる。",
+    "骨盤が後方へ回る。",
+    "長いレバーから始めて鼠径部へ急に負荷をかける。"
+  ],
+  "progressions": [
+    "膝支持から足首支持へレバーを長くする。",
+    "下側の脚を上下する動的反復へ進む。"
+  ],
+  "regressions": [
+    "上側の膝をベンチへ置く短いレバーにする。",
+    "床でのサイドプランクと内転筋種目を別々に行う。"
+  ]
+},
+  {
+  "id": "phy-mobility-03",
+  "name": "肩内旋モビリティドリル",
+  "category": [
+    "フィジカル",
+    "モビリティ",
+    "肩"
+  ],
+  "summary": "肩の内旋可動域を確認し、頭上動作に必要な肩周囲のモビリティを扱う。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "モビリティ",
+    "セルフ"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home",
+    "court"
+  ],
+  "equipment": [],
+  "intensity": "low",
+  "durationMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "tags": [
+    "肩",
+    "内旋",
+    "モビリティ",
+    "可動域"
+  ],
+  "cues": [
+    "肩前面の痛みまで押さない",
+    "肩甲骨ごと床から浮かせない",
+    "左右差を無理に揃えない"
+  ],
+  "media": [
+    "e3-shoulder-rom",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "e3-shoulder-rom",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "肩痛や不安定感がある場合は自己判断で可動域を広げず、専門家へ相談する。"
+  ],
+  "purposes": [
+    "肩内旋の現在の範囲を確認し、痛みのない範囲で反復する。"
+  ],
+  "setup": [
+    "横向きで行う場合は、下側の肩と肘をおよそ90度にして前腕を立てる。",
+    "肩甲骨が過度に前へ動かない位置を取る。"
+  ],
+  "steps": [
+    "反対の手で前腕をゆっくり床方向へ誘導する。",
+    "肩の後方に軽い伸張感が出る範囲で止め、呼吸する。",
+    "開始位置へ戻し、左右差を確認する。"
+  ],
+  "successCriteria": [
+    "痛みなく一定の範囲を往復できる。",
+    "実施後も肩前面の痛みや不安定感が残らない。"
+  ],
+  "commonErrors": [
+    "強く押して可動域を作ろうとする。",
+    "肩甲骨が浮いて見かけの内旋を増やす。",
+    "内旋だけを頭上動作の唯一の制限と判断する。"
+  ],
+  "progressions": [
+    "自動運動で内旋範囲を制御する。"
+  ],
+  "regressions": [
+    "押さずに自動運動だけ行う。",
+    "痛みや不安定感があれば実施せず専門家の評価を受ける。"
+  ]
+},
+  {
+  "id": "phy-mobility-04",
+  "name": "チューブ肩外旋・減速コントロール",
+  "category": [
+    "フィジカル",
+    "モビリティ",
+    "肩の減速"
+  ],
+  "summary": "肩を90度外転・肘を90度屈曲した姿勢でチューブ外旋を行い、投球・サーブ後の減速に関わる肩後方の制御を鍛える。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "チューブトレーニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home",
+    "court"
+  ],
+  "equipment": [
+    "resistance-band",
+    "anchor"
+  ],
+  "intensity": "low",
+  "durationMinutes": {
+    "min": 3,
+    "max": 8
+  },
+  "tags": [
+    "肩",
+    "減速",
+    "チューブ",
+    "障害予防"
+  ],
+  "cues": [
+    "肘と肩を同じ高さに保つ",
+    "肩をすくめず体幹を回さない",
+    "戻りをゆっくり制御する"
+  ],
+  "media": [
+    "performanceplus-jband-er",
+    "nismat-arm-care",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "performanceplus-jband-er",
+    "nismat-arm-care",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "derived",
+  "safetyNotes": [
+    "チューブと支点の損傷を確認し、顔へ跳ね返る方向に立たない。",
+    "肩痛や不安定感がある場合は自己判断で続けず、医療・運動の専門家へ相談する。"
+  ],
+  "aliases": [
+    "チューブ補助・肩デセラレーション",
+    "Jバンド外旋"
+  ],
+  "purposes": [
+    "頭上動作で加速した腕を制御する肩後方の筋力と持久力を扱う。"
+  ],
+  "setup": [
+    "チューブを肩の高さに固定し、運動側の腕が支点から遠い位置になるよう横向きに立つ。",
+    "肩と肘を90度にし、体幹をまっすぐ保つ。"
+  ],
+  "steps": [
+    "肘の位置を保ったまま、手を後方へ動かして肩をゆっくり外旋する。",
+    "終点で肩をすくめず短く止める。",
+    "チューブに引かれないよう、同じ速度で開始位置へ戻す。"
+  ],
+  "successCriteria": [
+    "肘位置と体幹を変えず、往復を同じ速度で行える。",
+    "肩前面の痛みや不安定感なく実施できる。"
+  ],
+  "commonErrors": [
+    "抵抗が強く、体幹を回して代償する。",
+    "肘が下がる。",
+    "戻りをチューブ任せにする。"
+  ],
+  "progressions": [
+    "軽い抵抗で反復数を増やし、頭上動作に必要な持久力へ進む。"
+  ],
+  "regressions": [
+    "肘を体側につけた外旋へ戻す。",
+    "肩の高さを下げ、痛みのない角度で行う。"
+  ]
+},
+  {
+  "id": "phy-endurance-03",
+  "name": "20秒走／20秒休息インターバル",
+  "category": [
+    "フィジカル",
+    "持久力",
+    "ポイント間回復"
+  ],
+  "summary": "20秒の高強度走と20秒の休息を交互に行い、ポイント間の呼吸回復を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "インターバル",
+    "ランニング"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "court",
+    "outdoor",
+    "gym"
+  ],
+  "equipment": [
+    "timer"
+  ],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 6,
+    "max": 15
+  },
+  "tags": [
+    "20秒",
+    "インターバル",
+    "回復力",
+    "ランニング"
+  ],
+  "cues": [
+    "最初から全力で飛ばしすぎない",
+    "休息で呼吸と姿勢を整える",
+    "速度より反復品質を揃える"
+  ],
+  "media": [
+    "blue-guy-tennis-physique",
+    "itf-endurance"
+  ],
+  "sources": [
+    "blue-guy-tennis-physique",
+    "itf-endurance"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "十分にウォームアップし、走動作や呼吸が崩れたら終了する。"
+  ],
+  "purposes": [
+    "短い高強度走と短い休息を繰り返し、ポイント間の回復を観察する。"
+  ],
+  "setup": [
+    "平坦で滑らない走路とタイマーを用意する。",
+    "走路の端と周囲に十分な減速スペースを確保する。"
+  ],
+  "steps": [
+    "十分にウォームアップする。",
+    "20秒間、フォームを保てる高い強度で走る。",
+    "20秒間、歩行または静止で呼吸を整える。",
+    "同じ20秒／20秒を、フォームと目標ペースを保てる範囲で反復する。"
+  ],
+  "successCriteria": [
+    "最終反復まで走動作が崩れず、20秒区間の距離低下を小さく保てる。",
+    "休息後に次の反復へ安全に入れる。"
+  ],
+  "commonErrors": [
+    "初回の速度が高すぎて急激に失速する。",
+    "減速スペースが不足する。",
+    "フォームが崩れても時間だけ継続する。"
+  ],
+  "progressions": [
+    "同じペースを保てる反復数を少しずつ増やす。"
+  ],
+  "regressions": [
+    "走速度を下げる。",
+    "休息を長くしてから20秒／20秒へ近づける。"
+  ]
+},
+  {
+  "id": "phy-endurance-04",
+  "name": "縄跳び・ポイント間持久力",
+  "category": [
+    "フィジカル",
+    "持久力",
+    "フットワーク"
+  ],
+  "summary": "縄跳びで足の反発を保ちながら心拍を上げ、反復動作への耐性を作る。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "縄跳び",
+    "インターバル"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "gym",
+    "home",
+    "outdoor"
+  ],
+  "equipment": [
+    "jump-rope"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 15
+  },
+  "tags": [
+    "縄跳び",
+    "持久力",
+    "足関節",
+    "リズム"
+  ],
+  "cues": [
+    "高く跳びすぎない",
+    "肩ではなく手首で縄を回す",
+    "着地音を小さくする"
+  ],
+  "media": [
+    "rip-it-tennis-jump-rope",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "rip-it-tennis-jump-rope",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "derived",
+  "safetyNotes": [
+    "滑らない場所を使い、ふくらはぎやアキレス腱に違和感があれば中止する。"
+  ],
+  "purposes": [
+    "小さい連続ジャンプでリズムと足関節の反発を保ちながら心拍を上げる。"
+  ],
+  "setup": [
+    "身長に合う縄と、頭上・左右に十分な空間のある滑らない床を使う。"
+  ],
+  "steps": [
+    "肘を体側へ置き、手首で縄を回す。",
+    "必要最小限の高さで両足ジャンプを連続する。",
+    "姿勢とリズムを保てる時間だけ行い、歩いて回復する。"
+  ],
+  "successCriteria": [
+    "縄を止めずに一定リズムを保ち、着地位置が大きく動かない。",
+    "ふくらはぎやアキレス腱に違和感なく終えられる。"
+  ],
+  "commonErrors": [
+    "膝を高く上げて毎回大きく跳ぶ。",
+    "腕全体で縄を回す。",
+    "疲労で着地音が大きくなっても続ける。"
+  ],
+  "progressions": [
+    "両足跳びから交互足、スプリットステップ、片脚の短い区間へ進む。"
+  ],
+  "regressions": [
+    "縄なしで小さなポゴジャンプを行う。",
+    "短い実施時間と長い休息を交互にする。"
+  ]
+},
+  {
+  "id": "phy-endurance-05",
+  "name": "5mシャッフル＋メディシンボールスイング",
+  "category": [
+    "フィジカル",
+    "持久力",
+    "疲労下パワー"
+  ],
+  "summary": "メディシンボールを全力で振り、5mシャッフルして再び振る動作をつなぐ。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "インターバル",
+    "トレーニング"
+  ],
+  "playerCount": {
+    "min": 1,
+    "max": 2
+  },
+  "environments": [
+    "court",
+    "gym"
+  ],
+  "equipment": [
+    "medicine-ball",
+    "cones"
+  ],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 5,
+    "max": 12
+  },
+  "tags": [
+    "メディシンボール",
+    "シャッフル",
+    "疲労下パワー",
+    "持久力"
+  ],
+  "cues": [
+    "スイングは腕だけでなく足と骨盤から始める",
+    "シャッフルで足を交差しない",
+    "端で止まってからボールを扱う"
+  ],
+  "media": [
+    "blue-guy-tennis-physique",
+    "sportplan-medball-turns",
+    "tennis-side-forces"
+  ],
+  "sources": [
+    "blue-guy-tennis-physique",
+    "sportplan-medball-turns",
+    "tennis-side-forces"
+  ],
+  "status": "derived",
+  "safetyNotes": [
+    "周囲の投球・スイング空間を確保し、姿勢が崩れたら終了する。"
+  ],
+  "purposes": [
+    "側方移動と回旋動作を交互に行い、疲労下でも姿勢と出力を保つ。"
+  ],
+  "setup": [
+    "2つのコーンを5m離して置き、各端にメディシンボールを扱う空間を確保する。",
+    "投げずに振る場合も、人や物がスイング範囲へ入らないようにする。"
+  ],
+  "steps": [
+    "一方の端で軽いメディシンボールを両手に持ち、フォアまたはバック方向へ全身で回旋する。",
+    "ボールを安全に置き、反対端へ5mをサイドシャッフルする。",
+    "反対端で逆方向の回旋を行い、シャッフルで戻る。",
+    "出力または移動姿勢が落ちる前に反復を終える。"
+  ],
+  "successCriteria": [
+    "疲労しても5mの姿勢と回旋順序を保てる。",
+    "ボールの扱いと移動の切り替えを安全に行える。"
+  ],
+  "commonErrors": [
+    "ボールを持ったまま無理にシャッフルする。",
+    "端で減速せずスイングへ入る。",
+    "重すぎるボールで腕だけの動作になる。"
+  ],
+  "progressions": [
+    "姿勢を保てる範囲で反復時間を延ばす。",
+    "安全な壁と指導者がいる場合は回旋スローへ進む。"
+  ],
+  "regressions": [
+    "ボールなしのシャドー回旋にする。",
+    "距離を短くするか歩行シャッフルへ下げる。"
+  ]
+}
 ]

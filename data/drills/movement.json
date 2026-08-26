@@ -2,13 +2,15 @@
   {
     "id": "move-01",
     "name": "視覚合図スプリット",
+    "aliases": ["パートナー指差しリアクション", "色・番号コール", "ランダムカラーサイン"],
     "category": ["フットワーク・身体操作", "反応", "スプリットステップ"],
     "summary": "相手またはコーチのインパクト合図に合わせてスプリットし、示された方向へ初動する。",
     "disciplines": ["both"], "formats": ["リアクション"], "playerCount": {"min": 2},
     "environments": ["court", "gym"], "equipment": ["racket", "cones"], "intensity": "medium", "durationMinutes": {"min": 5, "max": 10},
     "tags": ["スプリットステップ", "視覚反応", "第一歩"],
     "cues": ["着地を合図より早く固定しない", "着地直後に重心を方向へ移す", "上体を立てたまま低く構える"],
-    "media": ["usta-return-techniques", "usta-quickness"], "sources": ["usta-return-techniques", "usta-quickness"], "status": "derived"
+    "progressions": ["パートナーの指差し、色・番号の音声コール、途中で変わるカラーサインの順に判断条件を増やす。"],
+    "media": ["usta-return-techniques", "usta-quickness", "blue-guy-tennis-physique"], "sources": ["usta-return-techniques", "usta-quickness", "blue-guy-tennis-physique"], "status": "derived"
   },
   {
     "id": "move-02",
@@ -41,7 +43,7 @@
     "environments": ["court"], "equipment": ["racket", "cones", "timer"], "intensity": "high", "durationMinutes": {"min": 5, "max": 10},
     "tags": ["方向転換", "敏捷性", "テスト"],
     "cues": ["各点の手前で減速する", "腰だけを折らず脚で低くなる", "左右の回り方を統一して計測する"],
-    "media": ["usta-fitness-tests"], "sources": ["usta-fitness-tests"], "status": "researched"
+    "media": ["usta-fitness-tests", "blue-guy-tennis-physique"], "sources": ["usta-fitness-tests", "blue-guy-tennis-physique"], "status": "researched"
   },
   {
     "id": "move-05",
@@ -57,13 +59,14 @@
   {
     "id": "move-06",
     "name": "シャッフル／クロスオーバー選択",
+    "aliases": ["クロスオーバードリル"],
     "category": ["フットワーク・身体操作", "移動", "使い分け"],
     "summary": "移動距離を合図で変え、近距離はシャッフル、遠距離はクロスオーバーで到達する。",
     "disciplines": ["both"], "formats": ["フットワーク", "リアクション"], "playerCount": {"min": 2},
     "environments": ["court", "gym"], "equipment": ["cones"], "intensity": "medium", "durationMinutes": {"min": 6, "max": 12},
     "tags": ["シャッフル", "クロスオーバー", "距離判断"],
     "cues": ["最短で届く足運びを選ぶ", "足を交差したまま打点へ入らない", "最後は調整歩へ切り替える"],
-    "media": ["usta-quickness"], "sources": ["usta-quickness"], "status": "derived"
+    "media": ["usta-quickness", "blue-guy-tennis-physique"], "sources": ["usta-quickness", "blue-guy-tennis-physique"], "status": "derived"
   },
   {
     "id": "move-07",
@@ -74,7 +77,8 @@
     "environments": ["court"], "equipment": ["racket", "balls", "cones"], "intensity": "high", "durationMinutes": {"min": 6, "max": 12},
     "tags": ["減速", "外脚", "切り返し", "リカバリー"],
     "cues": ["膝とつま先の向きを揃える", "接地で上体が流れない", "止まる動作を戻る動作へつなげる"],
-    "media": ["usta-quickness", "itf-fitness"], "sources": ["usta-quickness", "itf-fitness"], "status": "derived"
+    "progressions": ["外脚で減速した直後にシャドースイングを入れ、停止姿勢と打球準備をつなぐ。"],
+    "media": ["usta-quickness", "itf-fitness", "blue-guy-tennis-physique"], "sources": ["usta-quickness", "itf-fitness", "blue-guy-tennis-physique"], "status": "derived"
   },
   {
     "id": "move-08",
@@ -163,5 +167,266 @@
     "sources": ["sokeibu-hip-video"],
     "status": "researched",
     "safetyNotes": ["つま先を無理に内側へ向けず、股関節や膝に鋭い痛み、詰まり、ねじれ感が出たら中止する。", "鼠径部や股関節に治療中の症状がある場合は、自己判断で可動域を広げず専門家へ相談する。"]
-  }
+  },
+  {
+  "id": "move-14",
+  "name": "コントロールド・スライドランジ",
+  "category": [
+    "フットワーク・身体操作",
+    "減速",
+    "スライド"
+  ],
+  "summary": "横方向へ移動してスライドし、外脚へ荷重して勢いを吸収する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "フットワーク",
+    "身体操作"
+  ],
+  "playerCount": {
+    "min": 1,
+    "max": 2
+  },
+  "environments": [
+    "court"
+  ],
+  "equipment": [
+    "cones-optional"
+  ],
+  "intensity": "high",
+  "durationMinutes": {
+    "min": 4,
+    "max": 10
+  },
+  "tags": [
+    "スライド",
+    "減速",
+    "外脚",
+    "エキセントリック"
+  ],
+  "cues": [
+    "滑る距離より停止姿勢を優先する",
+    "重心を低くし広いスタンスを作る",
+    "最初はボールを打たない"
+  ],
+  "media": [
+    "tenfitmen-hardcourt-slide",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "tenfitmen-hardcourt-slide",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "derived",
+  "safetyNotes": [
+    "サーフェス、シューズ、選手の経験を指導者が確認し、ハードコートでの自己流練習は避ける。",
+    "足首・膝・股関節に痛みや引っ掛かりが出たら直ちに中止する。"
+  ],
+  "purposes": [
+    "外脚で横方向の速度を吸収し、低い姿勢から回復へ移る。"
+  ],
+  "setup": [
+    "まずクレーなど、指導者が滑走練習に適すると判断したサーフェスを使う。",
+    "短い助走と十分な停止スペースを取り、ボールなしで始める。"
+  ],
+  "steps": [
+    "横方向へ低い姿勢で移動する。",
+    "外脚を進行方向へ出し、足の進入角を小さくして重心を低く保つ。",
+    "短い距離だけ滑り、外脚で速度を吸収してバランスを止める。",
+    "後脚を使って回復方向へ押し戻る。"
+  ],
+  "successCriteria": [
+    "短い滑走後に転倒せず、外脚で静止できる。",
+    "左右とも次の回復ステップへ滑らかに移れる。"
+  ],
+  "commonErrors": [
+    "滑りにくい面で無理に足を横へ流す。",
+    "上体が高いまま足だけを遠くへ出す。",
+    "停止前に次の動作へ急ぐ。"
+  ],
+  "progressions": [
+    "ボールなしで安定後、ラケットを持ち、最後に予測可能な手出しボールへ進む。"
+  ],
+  "regressions": [
+    "スライドを外し、ラテラルランジで外脚の吸収だけを練習する。"
+  ]
+},
+  {
+  "id": "move-15",
+  "name": "ラダー調整歩3バリエーション",
+  "aliases": [
+    "ラダードリル",
+    "ハイニー",
+    "イン・アンド・アウト",
+    "ラダー・クロスオーバー"
+  ],
+  "category": [
+    "フットワーク・身体操作",
+    "調整歩",
+    "ラダー"
+  ],
+  "summary": "ラダーでハイニー、イン・アンド・アウト、クロスオーバーを行い、小さな歩幅を制御する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "フットワーク"
+  ],
+  "playerCount": {
+    "min": 1
+  },
+  "environments": [
+    "court",
+    "gym",
+    "outdoor"
+  ],
+  "equipment": [
+    "agility-ladder"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 5,
+    "max": 10
+  },
+  "tags": [
+    "ラダー",
+    "調整歩",
+    "ハイニー",
+    "クロスオーバー"
+  ],
+  "steps": [
+    "ハイニー：正面を向き、各マスへ左右1歩ずつ入れて膝を交互に上げる。",
+    "イン・アンド・アウト：両足をマス内へ入れ、次に両足を外へ出す動きを前進しながら繰り返す。",
+    "クロスオーバー：横向きになり、後ろ足を前足の前へ交差させて次のマスへ入れ、反対足を続ける。",
+    "各種目をゆっくり正確に行ってから速度を上げる。"
+  ],
+  "cues": [
+    "ラダーではなく進行方向を見る",
+    "足音を小さくする",
+    "正確さを失う前の速度を使う"
+  ],
+  "media": [
+    "tenniscompanion-ladder-drills",
+    "sportplan-ladder-high-knees",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "tenniscompanion-ladder-drills",
+    "sportplan-ladder-high-knees",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "derived",
+  "safetyNotes": [
+    "ラダーが滑らないよう固定し、足を引っ掛けたら速度を下げる。"
+  ],
+  "purposes": [
+    "足を置く位置とリズムを変えながら、小さい調整歩を正確に行う。"
+  ],
+  "setup": [
+    "ラダーを平らに置き、ずれないよう固定する。",
+    "先頭から数歩先まで走り抜ける空間を確保する。"
+  ],
+  "successCriteria": [
+    "ラダーを踏まず、同じリズムで最後まで通過できる。",
+    "クロスオーバーを左右向きの両方で行える。"
+  ],
+  "commonErrors": [
+    "足元を見続けて上体が丸まる。",
+    "速度を優先してマスを飛ばす。",
+    "クロスオーバーを片方向しか行わない。"
+  ],
+  "progressions": [
+    "出口でスプリットステップし、左右合図へ第一歩を出す。"
+  ],
+  "regressions": [
+    "縄ばしごを外し、床の線を使って歩行速度で行う。",
+    "3種目を分け、1つずつ習得する。"
+  ]
+},
+  {
+  "id": "move-16",
+  "name": "2点フィギュアエイト",
+  "category": [
+    "フットワーク・身体操作",
+    "調整歩",
+    "旋回"
+  ],
+  "summary": "2つのボールまたはマーカーの周囲を8の字に走り、身体の傾きと方向調整を練習する。",
+  "disciplines": [
+    "both"
+  ],
+  "formats": [
+    "フットワーク"
+  ],
+  "playerCount": {
+    "min": 1,
+    "max": 2
+  },
+  "environments": [
+    "court",
+    "gym",
+    "outdoor"
+  ],
+  "equipment": [
+    "balls-or-cones"
+  ],
+  "intensity": "medium",
+  "durationMinutes": {
+    "min": 4,
+    "max": 10
+  },
+  "tags": [
+    "フィギュアエイト",
+    "方向転換",
+    "身体の傾き",
+    "調整歩"
+  ],
+  "cues": [
+    "コーン周囲で姿勢を低くする",
+    "外脚で押して次の直線へ加速する",
+    "中央では歩幅を少し広げる"
+  ],
+  "media": [
+    "top-tennis-figure-eight",
+    "blue-guy-tennis-physique"
+  ],
+  "sources": [
+    "top-tennis-figure-eight",
+    "blue-guy-tennis-physique"
+  ],
+  "status": "researched",
+  "safetyNotes": [
+    "十分な間隔と滑らない路面を確保し、旋回時に足首や膝へ痛みが出たら中止する。"
+  ],
+  "purposes": [
+    "2点の周囲で小さい調整歩と方向転換を連続する。"
+  ],
+  "setup": [
+    "コーン2個を約5歩離して置く。",
+    "周囲に8の字を描いて走れる空間を確保する。"
+  ],
+  "steps": [
+    "一方のコーン外側から開始する。",
+    "コーンを小さい歩幅で回り、中央を斜めに横切って反対のコーンへ向かう。",
+    "反対コーンを逆方向へ回り、8の字を完成させる。",
+    "向きを替えて同じ回数を行う。"
+  ],
+  "successCriteria": [
+    "コーンへ触れず、左右対称の8の字を連続できる。",
+    "旋回で足が交差して詰まらず、出口で加速できる。"
+  ],
+  "commonErrors": [
+    "コーンから離れすぎて大きな円になる。",
+    "上体だけが内側へ倒れ、足が追いつかない。",
+    "一方向だけ反復する。"
+  ],
+  "progressions": [
+    "出口でフォア／バックのシャドースイングを加える。",
+    "コーチの合図で進行方向を反転する。"
+  ],
+  "regressions": [
+    "コーン間隔を広げ、歩行またはジョグで軌道を覚える。"
+  ]
+}
 ]
