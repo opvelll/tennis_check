@@ -4,9 +4,9 @@ import { emptyFilters, filterDrills } from './filter-drills'
 
 describe('filterDrills', () => {
   it('loads the complete catalog', () => {
-    expect(drills).toHaveLength(148)
+    expect(drills).toHaveLength(149)
     expect(drills).toHaveLength(catalogIndex.totalDrills)
-    expect(new Set(drills.map((drill) => drill.id)).size).toBe(148)
+    expect(new Set(drills.map((drill) => drill.id)).size).toBe(149)
     catalogIndex.files.forEach((category) => {
       const categoryDrills = drills.filter((drill) => drill.category[0] === category.label)
       expect(categoryDrills).toHaveLength(category.count)
@@ -74,6 +74,17 @@ describe('filterDrills', () => {
     expect(filterDrills(drills, { ...emptyFilters, query: 'ラインジャンプ' }).map((drill) => drill.id)).toContain('move-18')
     expect(sourceById.get('abetake-rhythm-training-short')?.url).toBe(
       'https://www.youtube.com/shorts/rljcqmIHKCc',
+    )
+  })
+
+  it('loads the sprint drill set and its reference video', () => {
+    const drill = filterDrills(drills, { ...emptyFilters, query: '膝抜きジャンプ' })
+      .find((item) => item.id === 'phy-rfd-13')
+
+    expect(drill?.steps).toHaveLength(10)
+    expect(filterDrills(drills, { ...emptyFilters, query: '足が速くなる' }).map((item) => item.id)).toContain('phy-rfd-13')
+    expect(sourceById.get('kazuni-sprint-drills-short')?.url).toBe(
+      'https://www.youtube.com/shorts/k43UtIyGu5Q',
     )
   })
 

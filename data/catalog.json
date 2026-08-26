@@ -2,13 +2,13 @@
   "version": 1,
   "updatedAt": "2026-08-27",
   "target": "competitive",
-  "totalDrills": 148,
+  "totalDrills": 149,
   "files": [
     { "id": "technical", "label": "技術", "color": "#2563EB", "path": "drills/technical.json", "count": 46 },
     { "id": "movement", "label": "フットワーク・身体操作", "color": "#0D9488", "path": "drills/movement.json", "count": 18 },
     { "id": "singles-tactics", "label": "シングルス戦術", "color": "#7C3AED", "path": "drills/singles-tactics.json", "count": 10 },
     { "id": "doubles-tactics", "label": "ダブルス戦術", "color": "#DB2777", "path": "drills/doubles-tactics.json", "count": 10 },
-    { "id": "physical", "label": "フィジカル", "color": "#EA580C", "path": "drills/physical.json", "count": 55 },
+    { "id": "physical", "label": "フィジカル", "color": "#EA580C", "path": "drills/physical.json", "count": 56 },
     { "id": "conditioning", "label": "コンディショニング", "color": "#16A34A", "path": "drills/conditioning.json", "count": 4 },
     { "id": "mental", "label": "メンタル", "color": "#4F46E5", "path": "drills/mental.json", "count": 5 }
   ],
