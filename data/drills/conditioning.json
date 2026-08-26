@@ -8,7 +8,7 @@
     "environments": ["court", "gym"], "equipment": ["resistance-band-optional", "jump-rope-optional"], "intensity": "low", "durationMinutes": {"min": 8, "max": 15},
     "tags": ["ウォームアップ", "動的ストレッチ", "準備", "肩"],
     "cues": ["軽い移動から段階的に速くする", "反動ではなく制御して可動域を広げる", "最後にテニス固有の動きを入れる"],
-    "media": ["usta-dynamic-warmup"], "sources": ["usta-dynamic-warmup", "itf-flexibility"], "status": "researched",
+    "media": ["usta-dynamic-warmup", "felix-mischker-weekly-fitness"], "sources": ["usta-dynamic-warmup", "itf-flexibility", "felix-mischker-weekly-fitness"], "status": "researched",
     "safetyNotes": ["高強度直前の長い静的ストレッチは別枠にする。"]
   },
   {

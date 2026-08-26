@@ -4,9 +4,9 @@ import { emptyFilters, filterDrills } from './filter-drills'
 
 describe('filterDrills', () => {
   it('loads the complete catalog', () => {
-    expect(drills).toHaveLength(137)
+    expect(drills).toHaveLength(148)
     expect(drills).toHaveLength(catalogIndex.totalDrills)
-    expect(new Set(drills.map((drill) => drill.id)).size).toBe(137)
+    expect(new Set(drills.map((drill) => drill.id)).size).toBe(148)
     catalogIndex.files.forEach((category) => {
       const categoryDrills = drills.filter((drill) => drill.category[0] === category.label)
       expect(categoryDrills).toHaveLength(category.count)
@@ -67,6 +67,14 @@ describe('filterDrills', () => {
     expect(filterDrills(drills, { ...emptyFilters, query: 'ランドマイン' }).map((drill) => drill.id)).toContain('phy-power-06')
     expect(filterDrills(drills, { ...emptyFilters, query: 'ブルガリアンスプリットスクワット' }).map((drill) => drill.id)).toContain('phy-strength-02')
     expect(filterDrills(drills, { ...emptyFilters, query: '色・番号コール' }).map((drill) => drill.id)).toContain('move-01')
+  })
+
+  it('loads the line rhythm jump and its reference video', () => {
+    expect(filterDrills(drills, { ...emptyFilters, query: 'リズムジャンプ' }).map((drill) => drill.id)).toContain('move-18')
+    expect(filterDrills(drills, { ...emptyFilters, query: 'ラインジャンプ' }).map((drill) => drill.id)).toContain('move-18')
+    expect(sourceById.get('abetake-rhythm-training-short')?.url).toBe(
+      'https://www.youtube.com/shorts/rljcqmIHKCc',
+    )
   })
 
   it('searches names, summaries, tags, and cues with NFKC normalization', () => {

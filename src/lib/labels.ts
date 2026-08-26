@@ -16,6 +16,7 @@ const valueLabels: Record<string, string> = {
   court: 'コート',
   home: '自宅',
   gym: 'ジム',
+  outdoor: '屋外',
   'court-side': 'コートサイド',
   racket: 'ラケット',
   balls: 'ボール',
@@ -27,6 +28,8 @@ const valueLabels: Record<string, string> = {
   'net-marker': 'ネット目印',
   'foam-roller': 'フォームローラー',
   'mat-optional': 'マット（任意）',
+  'low-bar-or-line': '低いバーまたはライン',
+  music: '音楽',
 }
 
 export function displayValue(value: string) {

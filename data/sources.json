@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "checkedAt": "2026-08-26",
+  "checkedAt": "2026-08-27",
   "sources": [
     {
       "id": "usta-video-index",
@@ -649,6 +649,30 @@
       "kind": "video-page",
       "url": "https://www.top-tennis-training.com/tennis-footwork-5-drills-to-improve-your-footwork/",
       "note": "Drill 1のコーン2個を約5歩離したフィギュアエイト、調整歩、方向転換を参照する。"
+    },
+    {
+      "id": "felix-mischker-weekly-fitness",
+      "title": "My Weekly Tennis Fitness Routine As An Aspiring Pro",
+      "organization": "Felix Mischker",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=oZJVjejc1Gg",
+      "note": "0:21〜5:58の障害予防・体幹・前腕・肩・フットワーク、6:42〜10:22のハードル、反応、スプリント、筋力、ジャンプ、11:19〜14:32のViPRとメディシンボールを使った全身動作を参照する。動画で示されない回数・負荷は補わない。"
+    },
+    {
+      "id": "abetake-rhythm-training-short",
+      "title": "運動神経を高めるリズムトレーニング",
+      "organization": "あべたけ 小中高アスリート育成",
+      "kind": "video",
+      "url": "https://www.youtube.com/shorts/rljcqmIHKCc",
+      "note": "0:00〜0:50の低いバーを使ったサイド、パー・前捻り、パー、パー・サイド、パー・空中クロスのリズムジャンプと、動画内に表示される回数を参照する。"
+    },
+    {
+      "id": "star-rhythm-jump-sports",
+      "title": "Sports スポーツ",
+      "organization": "一般社団法人スポーツリズムトレーニング協会",
+      "kind": "article",
+      "url": "https://srt.or.jp/sports/",
+      "note": "リズムジャンプの名称と、ラインを踏まない・リズムに合わせる・動作を制御するという基本条件を参照する。"
     }
   ]
 }
