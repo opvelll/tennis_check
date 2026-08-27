@@ -4,9 +4,9 @@ import { emptyFilters, filterDrills } from './filter-drills'
 
 describe('filterDrills', () => {
   it('loads the complete catalog', () => {
-    expect(drills).toHaveLength(149)
+    expect(drills).toHaveLength(151)
     expect(drills).toHaveLength(catalogIndex.totalDrills)
-    expect(new Set(drills.map((drill) => drill.id)).size).toBe(149)
+    expect(new Set(drills.map((drill) => drill.id)).size).toBe(151)
     catalogIndex.files.forEach((category) => {
       const categoryDrills = drills.filter((drill) => drill.category[0] === category.label)
       expect(categoryDrills).toHaveLength(category.count)
@@ -30,12 +30,37 @@ describe('filterDrills', () => {
     expect(warmups.map((drill) => drill.id)).toEqual([
       'prep-01',
       'prep-02',
+      'conditioning-cat-cow-01',
       'conditioning-smr-01',
     ])
     expect(cooldowns.map((drill) => drill.id)).toEqual([
       'recovery-01',
       'conditioning-smr-01',
     ])
+  })
+
+  it('loads cat-cow as a researched warm-up with its video', () => {
+    const catCow = filterDrills(drills, { ...emptyFilters, query: 'キャットカウ' })
+      .find((drill) => drill.id === 'conditioning-cat-cow-01')
+
+    expect(catCow?.formats).toContain('ウォームアップ')
+    expect(catCow?.steps).toHaveLength(3)
+    expect(catCow?.safetyNotes).toHaveLength(2)
+    expect(sourceById.get('senshinryochi-cat-cow')?.url).toBe(
+      'https://www.youtube.com/watch?v=-ulQEZNW6cQ',
+    )
+  })
+
+  it('loads the untested 16-pattern stroke drill as a draft', () => {
+    const drill = filterDrills(drills, { ...emptyFilters, query: '16パターン打ち分け' })
+      .find((item) => item.id === 'tech-stroke-16-pattern-01')
+
+    expect(drill?.status).toBe('draft')
+    expect(drill?.summary).toContain('未検証の試案')
+    expect(drill?.steps?.[2]).toContain('16パターン')
+    expect(drill?.safetyNotes?.[0]).toContain('実施結果をまだ確認していない')
+    expect(drill?.media).toEqual([])
+    expect(drill?.sources).toEqual([])
   })
 
   it('loads the full-body SMR routine and its source', () => {
