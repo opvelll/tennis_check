@@ -4,9 +4,9 @@ import { emptyFilters, filterDrills } from './filter-drills'
 
 describe('filterDrills', () => {
   it('loads the complete catalog', () => {
-    expect(drills).toHaveLength(151)
+    expect(drills).toHaveLength(153)
     expect(drills).toHaveLength(catalogIndex.totalDrills)
-    expect(new Set(drills.map((drill) => drill.id)).size).toBe(151)
+    expect(new Set(drills.map((drill) => drill.id)).size).toBe(153)
     catalogIndex.files.forEach((category) => {
       const categoryDrills = drills.filter((drill) => drill.category[0] === category.label)
       expect(categoryDrills).toHaveLength(category.count)
@@ -110,6 +110,36 @@ describe('filterDrills', () => {
     expect(filterDrills(drills, { ...emptyFilters, query: '足が速くなる' }).map((item) => item.id)).toContain('phy-rfd-13')
     expect(sourceById.get('kazuni-sprint-drills-short')?.url).toBe(
       'https://www.youtube.com/shorts/k43UtIyGu5Q',
+    )
+  })
+
+  it('loads the single-leg depth to lateral bound as an advanced derived drill', () => {
+    const drill = filterDrills(drills, { ...emptyFilters, query: 'ラテラルデプスジャンプ' })
+      .find((item) => item.id === 'phy-rfd-14')
+
+    expect(drill?.status).toBe('derived')
+    expect(drill?.category).toEqual(['フィジカル', 'RFD・プライオメトリクス', '側方片脚'])
+    expect(drill?.regressions).toContain('台を外し、スケーターバウンド＆スティックへ戻す。')
+    expect(drill?.safetyNotes?.[0]).toContain('初心者は行わず')
+    expect(sourceById.get('nsca-stretch-shortening-cycle')?.url).toBe(
+      'https://www.nsca.com/education/articles/kinetic-select/stretch-shortening-cycle/',
+    )
+  })
+
+  it('finds the D1 session by exercise name and resolves its video', () => {
+    const results = filterDrills(drills, {
+      ...emptyFilters,
+      query: 'ケトルベルウィンドミル',
+      category: 'フィジカル',
+      environment: 'gym',
+    })
+    const session = results.find((drill) => drill.id === 'phy-session-01')
+
+    expect(session).toBeDefined()
+    expect(session?.media).toEqual(['ascend-d1-tennis-session'])
+    expect(session?.sources).toEqual(session?.media)
+    expect(sourceById.get(session!.media[0])?.url).toBe(
+      'https://www.youtube.com/watch?v=xTa3Fb9rZeI',
     )
   })
 

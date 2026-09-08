@@ -315,6 +315,14 @@
       "note": "SSC、低頻度・低ボリューム、動作習得。"
     },
     {
+      "id": "nsca-stretch-shortening-cycle",
+      "title": "Stretch-Shortening Cycle",
+      "organization": "NSCA",
+      "kind": "article",
+      "url": "https://www.nsca.com/education/articles/kinetic-select/stretch-shortening-cycle/",
+      "note": "SSCの仕組み、プライオメトリクスの負荷、デプスジャンプを初心者向けとしない注意を参照する。"
+    },
+    {
       "id": "usta-shoulder-elbow",
       "title": "Prevention of Shoulder and Elbow Injuries",
       "organization": "USTA Player Development",
@@ -689,6 +697,14 @@
       "kind": "video",
       "url": "https://www.youtube.com/shorts/k43UtIyGu5Q",
       "note": "0:00〜0:29の膝伸ばしステップ、バウンディング、引き付けステップ、膝回しステップ、切り替えステップ、膝抜きジャンプ、ギャロップ、壁ドリル、振り込みスキップ、スピードスキップの実演を参照する。動画内で回数、距離、休息は指定されていない。"
+    },
+    {
+      "id": "ascend-d1-tennis-session",
+      "title": "Strength & Conditioning Session for D1 Tennis Player",
+      "organization": "Ascend Athletics",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=xTa3Fb9rZeI",
+      "note": "2026-09-08に動画ページと自動字幕を確認。0:24〜準備、3:02〜10ヤード往復シャッフル3セット、3:44〜ケトルベルウィンドミル10回×3セット、5:26〜片腕ベンチプレス＋チェストサポートロウ（6:30でロウ12回）、6:59〜ハーフニーリング片腕プルダウン＋チェストサポートリアデルトフライ各15回×3セット。自動字幕には誤認識があるため、曖昧な回数・左右の内訳や説明のない種目は補わない。所要時間・負荷調整・安全上の注意はアプリ用補足。"
     }
   ]
 }
