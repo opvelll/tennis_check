@@ -483,12 +483,28 @@
       "note": "Lateral lungeの足位置、側方への踏み込み、股関節を後方へ引く動作を参照する。"
     },
     {
+      "id": "spotuber-lateral-lunge",
+      "title": "「ラテラルランジ」で、効率良くお尻周りと内転筋の可動域を向上させよう！【ウォーミングアップ】",
+      "organization": "スポチューバーTV",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=s2PgyAL7C9w",
+      "note": "0:15〜1:34のラテラルランジの説明、1:34〜2:27のチェックポイント、2:27〜3:04の実演を参照する。動画タイトルにある身体効果を医療的な効能として扱わない。"
+    },
+    {
       "id": "strive-skater-squat",
       "title": "Exercise Demo - Skater Squats",
       "organization": "Strive & Uplift",
       "kind": "video",
       "url": "https://vimeo.com/394342453",
       "note": "片脚の安定、胸の位置、膝の前方移動を含むスケータースクワット実演を参照する。"
+    },
+    {
+      "id": "homefitness24-skater-squat",
+      "title": "16 スケータースクワット／谷本道哉さんの筋トレシリーズ／ホームフィットネス24",
+      "organization": "ホームフィットネス24（HomeFitness24）",
+      "kind": "video",
+      "url": "https://www.youtube.com/watch?v=sToJEpXdlCI",
+      "note": "0:00〜2:07のスケータースクワットのセットアップと片脚での下降・立ち上がりの実演を参照する。動画内に明示されない回数、セット数、負荷は補わない。"
     },
     {
       "id": "iyca-band-first-step",
