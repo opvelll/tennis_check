@@ -4,9 +4,9 @@ import { emptyFilters, filterDrills } from './filter-drills'
 
 describe('filterDrills', () => {
   it('loads the complete catalog', () => {
-    expect(drills).toHaveLength(153)
+    expect(drills).toHaveLength(166)
     expect(drills).toHaveLength(catalogIndex.totalDrills)
-    expect(new Set(drills.map((drill) => drill.id)).size).toBe(153)
+    expect(new Set(drills.map((drill) => drill.id)).size).toBe(166)
     catalogIndex.files.forEach((category) => {
       const categoryDrills = drills.filter((drill) => drill.category[0] === category.label)
       expect(categoryDrills).toHaveLength(category.count)
@@ -141,6 +141,34 @@ describe('filterDrills', () => {
     expect(sourceById.get(session!.media[0])?.url).toBe(
       'https://www.youtube.com/watch?v=xTa3Fb9rZeI',
     )
+  })
+
+  it('loads the 13 Alek Kovacevic session drills and their timestamped source', () => {
+    const sourceId = 'joey-bergles-alek-kovacevic-session'
+    const sessionDrillIds = [
+      'phy-mobility-07',
+      'phy-mobility-08',
+      'phy-mobility-09',
+      'phy-rfd-15',
+      'phy-rfd-16',
+      'phy-power-10',
+      'phy-rfd-17',
+      'phy-rfd-18',
+      'phy-rfd-19',
+      'phy-rfd-20',
+      'phy-power-11',
+      'phy-strength-22',
+      'phy-strength-23',
+    ]
+    const sessionDrills = drills.filter((drill) => sessionDrillIds.includes(drill.id))
+
+    expect(sessionDrills).toHaveLength(13)
+    expect(sessionDrills.every((drill) => drill.status === 'researched')).toBe(true)
+    expect(sessionDrills.every((drill) => drill.media.includes(sourceId) && drill.sources.includes(sourceId))).toBe(true)
+    expect(sessionDrills.every((drill) => (drill.safetyNotes?.length ?? 0) > 0)).toBe(true)
+    expect(filterDrills(drills, { ...emptyFilters, query: 'Overspeed Crossover Stick' }).map((drill) => drill.id)).toContain('phy-rfd-18')
+    expect(sourceById.get(sourceId)?.url).toBe('https://www.youtube.com/watch?v=-8p11m_pD4M')
+    expect(sourceById.get(sourceId)?.note).toContain('16:40〜TRXロウ＆ローテート')
   })
 
   it('searches names, summaries, tags, and cues with NFKC normalization', () => {
